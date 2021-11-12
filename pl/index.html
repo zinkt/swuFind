@@ -1,7 +1,6 @@
 <!doctype html>
 <html>
-
-<head>
+	<head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -21,66 +20,9 @@
 </head>
 
 <body>
-  <!--header-->
-  <header id="site-header" class="fixed-top">
-    <div class="container">
-      <nav class="navbar navbar-expand-lg stroke">
-        <h1><a class="navbar-brand mr-lg-5" href="index.html">
-            swuFind
-          </a></h1>
-        <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
-          data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
-          <span class="navbar-toggler-icon fa icon-close fa-times"></span>
-          </span>
-        </button>
 
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">主页 <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="search/searchpeople.html">寻人</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="search/searchthings.html">寻物</a>
-            </li>
-    
-            <li class="nav-item">
-              <a class="nav-link" href="search/other.html">其他</a>
-            </li>
-			  
-			   <li class="nav-item">
-              <a class="nav-link" href="contact.html">联系我们</a>
-            </li>
-
-          </ul>
-        </div>
-        <div class="d-lg-block d-none">
-          <a href="login.html" class="btn btn-style btn-secondary">登录</a>
-        </div>
-        <!-- toggle switch for light and dark theme -->
-        <div class="mobile-position">
-          <nav class="navigation">
-            <div class="theme-switch-wrapper">
-              <label class="theme-switch" for="checkbox">
-                <input type="checkbox" id="checkbox">
-                <div class="mode-container">
-                  <i class="gg-sun"></i>
-                  <i class="gg-moon"></i>
-                </div>
-              </label>
-            </div>
-          </nav>
-        </div>
-        <!-- //toggle switch for light and dark theme -->
-      </nav>
-    </div>
-  </header>
-  <!-- //header -->
   <!--banner-slider-->
+	<div id="header"></div>
   <!-- main-slider -->
   <section class="w3l-main-slider" id="home">
     <div class="banner-content">
@@ -425,58 +367,12 @@
       <!-- /grids -->
     </div>
     <!-- //grids -->
+	  
   </section>
   <!-- //testimonials -->
 
   <!--/w3l-footer-29-main-->
-  <footer>
-    <!-- footer -->
-    <section class="w3l-footer">
-          <div id="main">
-            <div class="ctbox">
-              <p>Copyright &copy; 2020.Company name All rights reserved.</p>
-            </div>
-            <div class="columns-2 mt-lg-0 mt-3">
-            </div>
-          </div>
-        </div>
-      </div>
-  
-      <!-- move top -->
-      <button onclick="topFunction()" id="movetop" title="Go to top">
-        <span class="fa fa-angle-up"></span>
-      </button>
-      <script>
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function () {
-          scrollFunction()
-        };
-  
-        function scrollFunction() {
-          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            document.getElementById("movetop").style.display = "block";
-          } else {
-            document.getElementById("movetop").style.display = "none";
-          }
-        }
-  
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-          document.body.scrollTop = 0;
-          document.documentElement.scrollTop = 0;
-        }
-      </script>
-      <!-- //move top -->
-      <script>
-        $(function () {
-          $('.navbar-toggler').click(function () {
-            $('body').toggleClass('noscroll');
-          })
-        });
-      </script>
-    </section>
-    <!-- //footer -->
-  </footer>
+ <div id="footer"></div>
   <!-- Template JavaScript -->
   <script src="assets/js/jquery-3.3.1.min.js"></script>
   <script src="assets/js/theme-change.js"></script>
@@ -512,44 +408,8 @@
       })
     })
   </script>
-  <!-- //script for tesimonials carousel slider -->
-  <!-- stats number counter-->
-  <script src="assets/js/jquery.waypoints.min.js"></script>
-  <script src="assets/js/jquery.countup.js"></script>
-  <script>
-    $('.counter').countUp();
-  </script>
-  <!-- //stats number counter -->
-
-  <!--/MENU-JS-->
-  <script>
-    $(window).on("scroll", function () {
-      var scroll = $(window).scrollTop();
-
-      if (scroll >= 80) {
-        $("#site-header").addClass("nav-fixed");
-      } else {
-        $("#site-header").removeClass("nav-fixed");
-      }
-    });
-
-    //Main navigation Active Class Add Remove
-    $(".navbar-toggler").on("click", function () {
-      $("header").toggleClass("active");
-    });
-    $(document).on("ready", function () {
-      if ($(window).width() > 991) {
-        $("header").removeClass("active");
-      }
-      $(window).on("resize", function () {
-        if ($(window).width() > 991) {
-          $("header").removeClass("active");
-        }
-      });
-    });
-  </script>
-  <!--//MENU-JS-->
-
+  <!--导入布局js，共享header和footer-->
+  <script type="text/javascript" src="js/include.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
 
 </body>
