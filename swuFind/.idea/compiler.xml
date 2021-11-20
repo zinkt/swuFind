@@ -11,6 +11,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="swufind" target="14" />
+      <module name="travel" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

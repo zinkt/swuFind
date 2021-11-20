@@ -27,66 +27,7 @@
 
 <body>
   <!--header-->
-  <header id="site-header" class="fixed-top">
-    <div class="container">
-      <nav class="navbar navbar-expand-lg stroke">
-        <h1><a class="navbar-brand mr-lg-5" href="../index.html">
-            swuFind
-          </a></h1>
-        <!-- if logo is image enable this   
-      <a class="navbar-brand" href="#index.html">
-          <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
-      </a> -->
-        <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
-          data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
-          <span class="navbar-toggler-icon fa icon-close fa-times"></span>
-          </span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="../index.html">主页 <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="searchpeople.html">寻人</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="searchthings.html">寻物</a>
-            </li>
-           
-            <li class="nav-item">
-              <a class="nav-link" href="other.html">其他</a>
-            </li>
-			  <li class="nav-item">
-              <a class="nav-link" href="../contact.html">联系我们</a>
-            </li>
-
-          </ul>
-        </div>
-        <div class="d-lg-block d-none">
-          <a href="../login.html" class="btn btn-style btn-secondary">登录</a>
-        </div>
-        <!-- toggle switch for light and dark theme -->
-        <div class="mobile-position">
-          <nav class="navigation">
-            <div class="theme-switch-wrapper">
-              <label class="theme-switch" for="checkbox">
-                <input type="checkbox" id="checkbox">
-                <div class="mode-container">
-                  <i class="gg-sun"></i>
-                  <i class="gg-moon"></i>
-                </div>
-              </label>
-            </div>
-          </nav>
-        </div>
-        <!-- //toggle switch for light and dark theme -->
-      </nav>
-    </div>
-  </header>
+	<div id="header"></div>
   <!-- //header -->
   <!-- about breadcrumb -->
   <section class="w3l-about-breadcrumb text-left">
@@ -210,20 +151,20 @@
                     </div>
                     <div class="pageNum">
                         <ul>
-                            <li><a href="">首页</a></li>
-                            <li class="threeword"><a href="#">上一页</a></li>
-                            <li><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li><a href="#">6</a></li>
-                            <li><a href="#">7</a></li>
-                            <li><a href="#">8</a></li>
-                            <li><a href="#">9</a></li>
-                            <li><a href="#">10</a></li>
-                            <li class="threeword"><a href="javascript:;">下一页</a></li>
-                            <li class="threeword"><a href="javascript:;">末页</a></li>
+                            <a href=""><li>首页</li></a>
+                            <a href="#"><li class="threeword">上一页</li></a>
+                            <a href="#"><li>1</li></a>
+                            <a href="#"><li>2</li></a>
+                            <a href="#"><li>3</li></a>
+                            <a href="#"><li>4</li></a>
+                            <a href="#"><li>5</li></a>
+                            <a href="#"><li>6</li></a>
+                            <a href="#"><li>7</li></a>
+                            <a href="#"><li>8</li></a>
+                            <a href="#"><li>9</li></a>
+                            <a href="#"><li>10</li></a>
+                            <a href="javascript:;"><li class="threeword">下一页</li></a>
+                            <a href="javascript:;"><li class="threeword">末页</li></a>
                         </ul>
                     </div>
                 </div>
@@ -273,58 +214,50 @@
         </div>
     </div>
 </div>
-  <footer>
-    <!-- footer -->
-    <section class="w3l-footer">
-            <div id="main">
-            <div class="ctbox">
-              <p>Copyright &copy; 2020.Company name All rights reserved.</p>
-            </div>
-            <div class="columns-2 mt-lg-0 mt-3">
-            </div>
-          </div>
-        </div>
-      </div>
-  
-      <!-- move top -->
-      <button onclick="topFunction()" id="movetop" title="Go to top">
-        <span class="fa fa-angle-up"></span>
-      </button>
-      <script>
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function () {
-          scrollFunction()
-        };
-  
-        function scrollFunction() {
-          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            document.getElementById("movetop").style.display = "block";
-          } else {
-            document.getElementById("movetop").style.display = "none";
-          }
-        }
-  
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-          document.body.scrollTop = 0;
-          document.documentElement.scrollTop = 0;
-        }
-      </script>
-      <!-- //move top -->
-      <script>
-        $(function () {
-          $('.navbar-toggler').click(function () {
-            $('body').toggleClass('noscroll');
-          })
-        });
-      </script>
-    </section>
-    <!-- //footer -->
-  </footer>
-
-  <!-- Template JavaScript -->
+<div id="footer"></div>
   <script src="assets/js/jquery-3.3.1.min.js"></script>
   <script src="assets/js/theme-change.js"></script>
+  <!--/slider-js-->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/modernizr-2.6.2.min.js"></script>
+  <script src="assets/js/jquery.zoomslider.min.js"></script>
+  <!--//slider-js-->
+  <script src="assets/js/owl.carousel.js"></script>
+  <!-- script for tesimonials carousel slider -->
+  <script>
+    $(document).ready(function () {
+      $("#owl-demo1").owlCarousel({
+        loop: true,
+        margin: 20,
+        nav: false,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1,
+            nav: false
+          },
+          736: {
+            items: 1,
+            nav: false
+          },
+          1000: {
+            items: 1,
+            nav: false,
+            loop: true
+          }
+        }
+      })
+    })
+  </script>
+  <!-- //script for tesimonials carousel slider -->
+  <!-- stats number counter-->
+  <script src="assets/js/jquery.waypoints.min.js"></script>
+  <script src="assets/js/jquery.countup.js"></script>
+  <script>
+    $('.counter').countUp();
+  </script>
+  <!-- //stats number counter -->
+
   <!--/MENU-JS-->
   <script>
     $(window).on("scroll", function () {
@@ -355,6 +288,9 @@
   <!--//MENU-JS-->
 
   <script src="assets/js/bootstrap.min.js"></script>
+  <!--导入布局js，共享header和footer-->
+  <script type="text/javascript" src="js/include.js"></script>
+  
 
 </body>
 
