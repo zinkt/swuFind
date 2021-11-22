@@ -1,3 +1,10 @@
+<script src="js/jquery.js"></script>
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/getParameter.js"></script>
+<script type="text/javascript" src="js/alert.js"></script>
+
+
 <!--登录后修改用户-->
 <script>
       $(function (){
@@ -5,7 +12,24 @@
               var msg = "欢迎回来："+data.username;
               $("#span_username").html(msg);
           });
+
+        //分类数据
+        $.get("category/findAll",{},function (data) {
+          var lis='<li class="nav-active"><a href="index.html">Home</a></li>';
+          //遍历数组
+          for (var i=0;i<data.length;i++){
+            var li='<li><a href="searchpeople.html?cid='+data[i].cid+'">'+data[i].cname+'</a></li>';
+            lis+=li;
+          }
+          $("#category").html(lis);
+
+        });
+
+
       });
+
+
+
  </script>  
 
 
