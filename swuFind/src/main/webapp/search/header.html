@@ -1,12 +1,4 @@
 <!doctype html>
-
-<script src="js/jquery.js"></script>
-<script src="js/jquery-3.3.1.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/getParameter.js"></script>
-<script type="text/javascript" src="js/alert.js"></script>
-
-
 <!--登录后修改用户-->
 <script>
       $(function (){
@@ -14,32 +6,17 @@
               var msg = "欢迎回来："+data.username;
               $("#span_username").html(msg);
           });
-
-        //分类数据
-        $.get("category/findAll",{},function (data) {
-          var lis='<li class="nav-active"><a href="index.html">Home</a></li>';
-          //遍历数组
-          for (var i=0;i<data.length;i++){
-            var li='<li><a href="searchpeople.html?cid='+data[i].cid+'">'+data[i].cname+'</a></li>';
-            lis+=li;
-          }
-          $("#category").html(lis);
-
-        });
-
-
       });
-
-
-
- </script>   
+ </script>  
 <!--未登陆时显示登陆 登陆时显示用户-->
-<script type="text/javascript">
+<script type="text/javascript" >
 	window.onload=	function ()
 	{
-		var u1 =document.getElementById("log");//获取登录注册组件id
+		 var u1 =document.getElementById("log");//获取登录注册组件id
 		var u2 =document.getElementById("usr");//获取用户信息组件id
-        var spans = $("#span_username").html();//获取span的数据
+ 
+ 
+		var spans = $("#span_username").html();//获取span的数据
  
 		if (spans !='')//判断当前span数据是否为空
 		{
@@ -92,7 +69,9 @@
    <!--用户登录状态-->
 		 <div class="login collapse navbar-collapse" id="usr">
             	
-                <span id="span_username">欢迎回来</span>
+                <span id="span_username">
+					欢迎回来
+			    </span>
 			 <ul class="navbar-nav mr-auto">
 		     <li class="nav-item">
               <a href="publish.html" class="nav-link">+发布信息</a>

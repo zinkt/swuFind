@@ -16622,7 +16622,7 @@ p.count-text {
 
 .w3l-contact .contact-grids input:focus,
 .w3l-contact .contact-grids textarea:focus {
-  border: 1px solid var(--secondary-color);
+  border: 1px solid var;
 }
 
 .w3l-contact .map h5 {

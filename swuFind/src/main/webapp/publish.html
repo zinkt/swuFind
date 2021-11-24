@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Register</title>
+  <title>Contact</title>
   <!-- google fonts -->
   <link href="http://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link href="http://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap"
@@ -17,33 +17,19 @@
 	<style>
 #main{ width:; float:center; padding:10px 0; border-top:1px solid #B6B6B6}
 .ctbox{ margin:0 auto; width:300px; border:1px}
-#register{margin: auto;margin-left: 40%;}
-
 </style>
-	
-	<script>  
-            function check2pwd() {  
-                    if(input1.value != input2.value) {  
-                        alert("两次输入密码不一致！")
-                        input1.value = "";  
-                        input2.value = "";  
-                    }
-            }
-        </script>
 </head>
 
 <body>
-  <!--header-->
-	<div id="header"></div>
-  <!-- //header -->
+  <!--header--><div id="header"></div>  <!-- //header -->
   <!-- about breadcrumb -->
   <section class="w3l-about-breadcrumb text-left">
     <div class="breadcrumb-bg breadcrumb-bg-about py-sm-5 py-4">
       <div class="container py-2">
-        <h2 class="title">Register</h2>
+        <h2 class="title">Contact us</h2>
         <ul class="breadcrumbs-custom-path mt-2">
           <li><a href="#url">Home</a></li>
-          <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span>Register</li>
+          <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span>Contact us</li>
         </ul>
       </div>
     </div>
@@ -52,43 +38,105 @@
 <!-- contact-form -->
 <section class="w3l-contact" id="contact">
   <div class="contact-infubd py-5">
-      <div class="contact-grids" id="register">
-        <div class="col-lg-6 mt-lg-0 mt-5 contact-centers">
-			
-          <form action="https://sendmail.w3layouts.com/submitForm" method="post" class="signin-form">
-            <div class="input-grids">
-             <div class="form-group form-inline">
-				 <img src="assets/images/register.png" height="" width="140"/>
-                <input type="text" name="user" id="" placeholder="请输入用户名" class="contact-input" required=""/>
-              </div>
-              <div class="form-group">
-				  
-                <input type="text" name="phonenumber"  id="" placeholder="请输入您的电话号码" class="contact-input" required="" onkeyup="value=value.replace(/[^\d\-\d]/g,'')" maxlength="11" />
-              </div>
-              <div class="form-group">
-                <input type="email" name="email" id="" placeholder="请输入您的电子邮箱" class="contact-input" onblur="" required=""/>
-              </div>
-				 <div class="form-group">
-                <input type="password" name="" id="input1" placeholder="请输入密码" class="contact-input"  required=""/>
-              </div>
-				 <div class="form-group">
-                <input type="password" name="" id="input2" placeholder="请再次输入密码确认" class="contact-input" onblur="check2pwd()" required=""/>
-              </div>
-				 <div class="text-left">
-					<a style="float: left" href="login.html">已有账号？立即登录</a>
-				  </div>
+    <div class="container py-lg-3">
+		<h2>+发布信息</h2>
+      <div class="contact-grids row">
+		  
+     
+		  <div class="col-lg-6 contact-left">
+          <div class="partners">
+            <div class="cont-details">
+              <h5>小贴士（TIPS）</h5>
+              <p class="mt-3 mb-4">Hi there, We are available 24/7 by fax, e-mail or by phone. Drop us line so we can talk
+                futher about that.</p>
             </div>
-            
-            <div class="text">
-              <button class="btn btn-style btn-primary">立即注册</button>
+            <div class="hours">
+              <h6 class="mt-4">Email:</h6>
+              <p> <a href="mailto:mail@swuFind.com">
+                mail@swuFind.com</a></p>
+              <h6 class="mt-4">Visit Us:</h6>
+              <p> Dormitory 309,No.6 Dormitory,Orange Garden,Southwest University.</p>
+              <h6 class="mt-4">Contact:</h6>
+              <p class="margin-top"><a href="tel:+44-255-366-88">+0431-176-3463-3577</a></p>
             </div>
-          </form>
+          </div>
+        </div>
+		 <div class="col-lg-6 mt-lg-0 mt-5 contact-right">
+			 <form accept-charset="UTF-8" action="" class="publish" id="new_topic" method="post">
+  <table width="100%" border="0" cellspacing="0" cellpadding="6">
+    <colgroup><col width="140"><col></colgroup>
+    <tbody>
+
+<tr>
+  <th>文章标题</th>
+  <td>
+    <label>
+      <input  required id="topic_title" maxlength="10" name="postname" size="60" type="text">
+    </label>
+  </td>
+</tr>
+<tr>
+  <th valign="top">文章简介</th>
+  <td>
+    <label>
+      <textarea cols="62" rows="14" name="content"></textarea>
+    </label>
+  </td>
+</tr>
+
+<tr>
+  <th valign="top">文章内容</th>
+  <td>
+    
+    <div class="body_count">
+    	<textarea cols="62" rows="20" name="content"></textarea>
+    </div>
+  </td>
+</tr>
+<tr>
+  <th valign="top">文章类别</th>
+  <td>
+    <div class="col-lg-6 contact-left">
+    	<select>
+			<option>寻人</option>
+			<option>寻物</option>
+			<option>其他</option>
+		</select>
+    </div>
+  </td>
+</tr>
+
+<tr>
+  <th>上传图片</th>
+  <td> <!-- 图片选择框 -->
+    
+	<form>
+      <input type="file" onchange='PreviewImage(this)' ;/>	
+    </form>
+    <!-- 图片展示容器 -->
+    <div class="img-cont"></div> 
+  </td>
+</tr>
+    <tr>
+      <th>&nbsp;</th>
+      <td>
+
+            <div class="text-right">
+              <button class="btn btn-style btn-primary">Send Message</button>
+            </div>
+      	
+      </td>
+    </tr>
+  </tbody></table>
+</form>
+
+
+			 </div>
         </div>
 
       </div>
-     
-    
-
+      
+    </div>
 </section>
 <!-- /contact-form -->
 
@@ -169,7 +217,7 @@
   <script src="assets/js/bootstrap.min.js"></script>
   <!--导入布局js，共享header和footer-->
   <script type="text/javascript" src="js/include.js"></script>
-
+  <script src="js/uploadjpg.js"></script>
 </body>
 
 </html>

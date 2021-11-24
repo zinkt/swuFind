@@ -40,10 +40,10 @@
   <section class="w3l-about-breadcrumb text-left">
     <div class="breadcrumb-bg breadcrumb-bg-about py-sm-5 py-4">
       <div class="container py-2">
-        <h2 class="title">Register</h2>
+        <h2 class="title">Forgetpasswd</h2>
         <ul class="breadcrumbs-custom-path mt-2">
           <li><a href="#url">Home</a></li>
-          <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span>Register</li>
+          <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span>Forgetpasswd</li>
         </ul>
       </div>
     </div>
@@ -58,30 +58,29 @@
           <form action="https://sendmail.w3layouts.com/submitForm" method="post" class="signin-form">
             <div class="input-grids">
              <div class="form-group form-inline">
-				 <img src="assets/images/register.png" height="" width="140"/>
-                <input type="text" name="user" id="" placeholder="请输入用户名" class="contact-input" required=""/>
+				 <img src="assets/images/forgetpasswd.png" height="65" width="180"/>
+                <input type="text" name="user" id="" placeholder="请输入您的用户名" class="contact-input" required=""/>
               </div>
+              
               <div class="form-group">
-				  
-                <input type="text" name="phonenumber"  id="" placeholder="请输入您的电话号码" class="contact-input" required="" onkeyup="value=value.replace(/[^\d\-\d]/g,'')" maxlength="11" />
-              </div>
-              <div class="form-group">
-                <input type="email" name="email" id="" placeholder="请输入您的电子邮箱" class="contact-input" onblur="" required=""/>
+                <input type="email" name="email" id="" placeholder="请输入您注册时使用的电子邮箱" class="contact-input" onblur="" required=""/>
               </div>
 				 <div class="form-group">
-                <input type="password" name="" id="input1" placeholder="请输入密码" class="contact-input"  required=""/>
+                <input type="password" name="" id="input1" placeholder="请输入新密码" class="contact-input"  required=""/>
               </div>
 				 <div class="form-group">
-                <input type="password" name="" id="input2" placeholder="请再次输入密码确认" class="contact-input" onblur="check2pwd()" required=""/>
+                <input type="password" name="" id="input2" placeholder="请再次输入新密码确认" class="contact-input" onblur="check2pwd()" required=""/>
               </div>
-				 <div class="text-left">
-					<a style="float: left" href="login.html">已有账号？立即登录</a>
+				
+				<div class="form-group">
+					 <div class="form-group">
+					<a style="float: left" href="login.html">返回登录</a>
 				  </div>
+              <button class="btn btn-style btn-primary">修改密码</button>
+            </div>
             </div>
             
-            <div class="text">
-              <button class="btn btn-style btn-primary">立即注册</button>
-            </div>
+            
           </form>
         </div>
 
