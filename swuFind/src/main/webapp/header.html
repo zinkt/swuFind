@@ -1,12 +1,9 @@
 <!doctype html>
-
-<script src="js/jquery.js"></script>
-<script src="js/jquery-3.3.1.js"></script>
+<script src = "https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/getParameter.js"></script>
-<script type="text/javascript" src="js/alert.js"></script>
-
-
+<!--<script type="text/javascript" src="js/alert.js"></script>-->
+<!--这个alert.js有问题-->
 <!--登录后修改用户-->
 <script>
       $(function (){
@@ -14,46 +11,30 @@
               var msg = "欢迎回来："+data.username;
               $("#span_username").html(msg);
           });
-
         //分类数据
         $.get("category/findAll",{},function (data) {
-          var lis='<li class="nav-active"><a href="index.html">Home</a></li>';
+          /*、
+          <li class="nav-item">
+              <a class="nav-link" href="index.html">11 <span class="sr-only">(current)</span></a>
+            </li>
+           */
+          var lis='<li class="nav-item"><a class="nav-link" href="index.html">首页</a></li>';
           //遍历数组
-          for (var i=0;i<data.length;i++){
-            var li='<li><a href="searchpeople.html?cid='+data[i].cid+'">'+data[i].cname+'</a></li>';
+          /*
+          变量从1开始，结束于最后一个之前（首页和联系我们）
+           */
+          for (var i=1;i<data.length-1;i++){
+            var li='<li class="nav-item"><a class="nav-link" href="searchpeople.html?cid='+data[i].cid+'">'+data[i].cname+'</a></li>';
             lis+=li;
           }
+          var _li='<li class="nav-item"><a class="nav-link" href="contact.html">联系我们</a></li>';
+          lis=lis+_li;
           $("#category").html(lis);
-
-        });
-
-
+        },"json");
       });
-
-
-
- </script>   
-<!--未登陆时显示登陆 登陆时显示用户-->
-<script type="text/javascript">
-	window.onload=	function ()
-	{
-		var u1 =document.getElementById("log");//获取登录注册组件id
-		var u2 =document.getElementById("usr");//获取用户信息组件id
-        var spans = $("#span_username").html();//获取span的数据
- 
-		if (spans !='')//判断当前span数据是否为空
-		{
-			u2.style.visibility="hidden";//数据不为空则隐藏登录注册组件
-		}else{
-			u1.style.visibility="hidden";//数据为空则隐藏用户信息组件
-		}
- 
-	}
-</script>
-
-
+ </script>
 <!--header-->
-  <header id="site-header" class="fixed-top">
+  <header id="header" class="fixed-top">
     <div class="container">
       <nav class="navbar navbar-expand-lg stroke">
         <h1><a class="navbar-brand mr-lg-5" href="index.html">
@@ -65,31 +46,29 @@
           <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
           <span class="navbar-toggler-icon fa icon-close fa-times"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav mr-auto">
+          <ul class="navbar-nav mr-auto" id="category">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">主页 <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="index.html">11 <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="search/searchpeople.html">寻人</a>
+              <a class="nav-link" href="searchpeople.html">22</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="search/searchthings.html">寻物</a>
+              <a class="nav-link" href="searchthings.html">33</a>
             </li>
-    
             <li class="nav-item">
-              <a class="nav-link" href="search/other.html">其他</a>
+              <a class="nav-link" href="other.html">33</a>
             </li>
-			  
 			   <li class="nav-item">
-              <a class="nav-link" href="contact.html">联系我们</a>
+              <a class="nav-link" href="contact.html">44</a>
             </li>
-
           </ul>
         </div>
+		<!--用户登录-->
+
 		
-   <!--用户登录状态-->
+		 <!--用户登录状态-->
 		 <div class="login collapse navbar-collapse" id="usr">
             	
                 <span id="span_username">欢迎回来</span>
@@ -111,7 +90,7 @@
           <span><a href="login.html" class="btn btn-style btn-secondary">登录</a></span>
         </div>
 		
-	
+
         <!-- toggle switch for light and dark theme -->
         <div class="mobile-position">
           <nav class="navigation">
