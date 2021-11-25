@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="458c412b-af3a-43ee-9893-94efbed5d2ce" name="Changes" comment="Changes">
+    <list default="true" id="458c412b-af3a-43ee-9893-94efbed5d2ce" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register.html" afterDir="false" />
+>>>>>>> d74edb55b44e41f3a7d57da50211fbd2234b3cf0
       <change beforePath="$PROJECT_DIR$/target/classes/swu606309/swuFind/web/servlet/BaseServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/swu606309/swuFind/web/servlet/BaseServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
@@ -19,6 +24,12 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/webapp/header.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/swu606309/swuFind/web/servlet/BaseServlet.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/webapp/register.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/swu606309/swuFind/web/servlet/UserServlet.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="20rE5yo5ZbOq1rM5SndfquvxEH0" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -90,8 +101,12 @@
       <workItem from="1637249917456" duration="237000" />
       <workItem from="1637583837986" duration="337000" />
       <workItem from="1637758841694" duration="247000" />
+<<<<<<< HEAD
       <workItem from="1637767907903" duration="94000" />
       <workItem from="1637768031203" duration="267000" />
+=======
+      <workItem from="1637767084286" duration="2046000" />
+>>>>>>> d74edb55b44e41f3a7d57da50211fbd2234b3cf0
     </task>
     <servers />
   </component>
