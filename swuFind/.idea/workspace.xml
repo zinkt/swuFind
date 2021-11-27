@@ -4,26 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="458c412b-af3a-43ee-9893-94efbed5d2ce" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2021_11_27_20_26____.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/_2021_11_27_20_26____.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/swu606309/swuFind/dao/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/swu606309/swuFind/dao/impl/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/swu606309/swuFind/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/swu606309/swuFind/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/swu606309/swuFind/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/swu606309/swuFind/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/swu606309/swuFind/web/servlet/BaseServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/swu606309/swuFind/web/servlet/BaseServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/swu606309/swuFind/web/servlet/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/swu606309/swuFind/web/servlet/UserServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/druid.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/druid.properties" afterDir="false" />
+    <list default="true" id="458c412b-af3a-43ee-9893-94efbed5d2ce" name="Changes" comment=" 注册完成">
       <change beforePath="$PROJECT_DIR$/src/main/webapp/register-ok.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register_ok.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/druid.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/druid.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/swu606309/swuFind/dao/impl/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/swu606309/swuFind/dao/impl/UserDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/swu606309/swuFind/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/swu606309/swuFind/domain/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/swu606309/swuFind/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/swu606309/swuFind/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/swu606309/swuFind/web/servlet/BaseServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/swu606309/swuFind/web/servlet/BaseServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2021-11-27" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/logs/access_log.2021-11-27" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/swuFind/SESSIONS.ser" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,6 +95,14 @@
       <workItem from="1637768031203" duration="267000" />
       <workItem from="1637767084286" duration="2046000" />
     </task>
+    <task id="LOCAL-00001" summary=" 注册完成">
+      <created>1638027691507</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1638027691507</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +119,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value=" 注册完成" />
+    <option name="LAST_COMMIT_MESSAGE" value=" 注册完成" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
