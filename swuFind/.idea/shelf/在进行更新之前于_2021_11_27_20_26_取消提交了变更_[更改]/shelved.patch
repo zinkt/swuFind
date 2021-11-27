@@ -1,0 +1,133 @@
+Index: target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><<<<<<< HEAD\r\nD:\\swuFind\\swuFind\\src\\main\\java\\swu606309\\swuFind\\domain\\Favorite.java\r\nD:\\swuFind\\swuFind\\src\\main\\java\\swu606309\\swuFind\\util\\UuidUtil.java\r\nD:\\swuFind\\swuFind\\src\\main\\java\\swu606309\\swuFind\\dao\\impl\\CategoryDaoImpl.java\r\nD:\\swuFind\\swuFind\\src\\main\\java\\swu606309\\swuFind\\domain\\RouteImg.java\r\nD:\\swuFind\\swuFind\\src\\main\\java\\swu606309\\swuFind\\domain\\Seller.java\r\nD:\\swuFind\\swuFind\\src\\main\\java\\swu606309\\swuFind\\domain\\User.java\r\nD:\\swuFind\\swuFind\\src\\main\\java\\swu606309\\swuFind\\service\\UserService.java\r\nD:\\swuFind\\swuFind\\src\\main\\java\\swu606309\\swuFind\\web\\servlet\\CheckCodeServlet.java\r\nD:\\swuFind\\swuFind\\src\\main\\java\\swu606309\\swuFind\\dao\\UserDao.java\r\nD:\\swuFind\\swuFind\\src\\main\\java\\swu606309\\swuFind\\util\\JDBCUtils.java\r\nD:\\swuFind\\swuFind\\src\\main\\java\\swu606309\\swuFind\\service\\impl\\UserServiceImpl.java\r\nD:\\swuFind\\swuFind\\src\\main\\java\\swu606309\\swuFind\\util\\JedisUtil.java\r\nD:\\swuFind\\swuFind\\src\\main\\java\\swu606309\\swuFind\\domain\\ResultInfo.java\r\nD:\\swuFind\\swuFind\\src\\main\\java\\swu606309\\swuFind\\util\\MailUtils.java\r\nD:\\swuFind\\swuFind\\src\\main\\java\\swu606309\\swuFind\\dao\\impl\\UserDaoImpl.java\r\nD:\\swuFind\\swuFind\\src\\main\\java\\swu606309\\swuFind\\service\\impl\\CategoryServiceImpl.java\r\nD:\\swuFind\\swuFind\\src\\main\\java\\swu606309\\swuFind\\util\\Md5Util.java\r\nD:\\swuFind\\swuFind\\src\\main\\java\\swu606309\\swuFind\\web\\servlet\\CategoryServlet.java\r\nD:\\swuFind\\swuFind\\src\\main\\java\\swu606309\\swuFind\\web\\servlet\\BaseServlet.java\r\nD:\\swuFind\\swuFind\\src\\main\\java\\swu606309\\swuFind\\domain\\Route.java\r\nD:\\swuFind\\swuFind\\src\\main\\java\\swu606309\\swuFind\\web\\servlet\\UserServlet.java\r\nD:\\swuFind\\swuFind\\src\\main\\java\\swu606309\\swuFind\\dao\\CategoryDao.java\r\nD:\\swuFind\\swuFind\\src\\main\\java\\swu606309\\swuFind\\service\\CategoryService.java\r\nD:\\swuFind\\swuFind\\src\\main\\java\\swu606309\\swuFind\\web\\filter\\CharchaterFilter.java\r\nD:\\swuFind\\swuFind\\src\\main\\java\\swu606309\\swuFind\\domain\\Category.java\r\n=======\r\nD:\\github_re\\swuFind\\swuFind\\src\\main\\java\\swu606309\\swuFind\\web\\servlet\\CheckCodeServlet.java\r\nD:\\github_re\\swuFind\\swuFind\\src\\main\\java\\swu606309\\swuFind\\domain\\Seller.java\r\nD:\\github_re\\swuFind\\swuFind\\src\\main\\java\\swu606309\\swuFind\\dao\\CategoryDao.java\r\nD:\\github_re\\swuFind\\swuFind\\src\\main\\java\\swu606309\\swuFind\\domain\\RouteImg.java\r\nD:\\github_re\\swuFind\\swuFind\\src\\main\\java\\swu606309\\swuFind\\service\\CategoryService.java\r\nD:\\github_re\\swuFind\\swuFind\\src\\main\\java\\swu606309\\swuFind\\util\\Md5Util.java\r\nD:\\github_re\\swuFind\\swuFind\\src\\main\\java\\swu606309\\swuFind\\domain\\User.java\r\nD:\\github_re\\swuFind\\swuFind\\src\\main\\java\\swu606309\\swuFind\\domain\\ResultInfo.java\r\nD:\\github_re\\swuFind\\swuFind\\src\\main\\java\\swu606309\\swuFind\\domain\\Route.java\r\nD:\\github_re\\swuFind\\swuFind\\src\\main\\java\\swu606309\\swuFind\\domain\\Category.java\r\nD:\\github_re\\swuFind\\swuFind\\src\\main\\java\\swu606309\\swuFind\\web\\servlet\\CategoryServlet.java\r\nD:\\github_re\\swuFind\\swuFind\\src\\main\\java\\swu606309\\swuFind\\web\\servlet\\UserServlet.java\r\nD:\\github_re\\swuFind\\swuFind\\src\\main\\java\\swu606309\\swuFind\\util\\JDBCUtils.java\r\nD:\\github_re\\swuFind\\swuFind\\src\\main\\java\\swu606309\\swuFind\\util\\UuidUtil.java\r\nD:\\github_re\\swuFind\\swuFind\\src\\main\\java\\swu606309\\swuFind\\util\\MailUtils.java\r\nD:\\github_re\\swuFind\\swuFind\\src\\main\\java\\swu606309\\swuFind\\service\\UserService.java\r\nD:\\github_re\\swuFind\\swuFind\\src\\main\\java\\swu606309\\swuFind\\service\\impl\\CategoryServiceImpl.java\r\nD:\\github_re\\swuFind\\swuFind\\src\\main\\java\\swu606309\\swuFind\\web\\filter\\CharchaterFilter.java\r\nD:\\github_re\\swuFind\\swuFind\\src\\main\\java\\swu606309\\swuFind\\web\\servlet\\BaseServlet.java\r\nD:\\github_re\\swuFind\\swuFind\\src\\main\\java\\swu606309\\swuFind\\service\\impl\\UserServiceImpl.java\r\nD:\\github_re\\swuFind\\swuFind\\src\\main\\java\\swu606309\\swuFind\\dao\\impl\\CategoryDaoImpl.java\r\nD:\\github_re\\swuFind\\swuFind\\src\\main\\java\\swu606309\\swuFind\\dao\\UserDao.java\r\nD:\\github_re\\swuFind\\swuFind\\src\\main\\java\\swu606309\\swuFind\\dao\\impl\\UserDaoImpl.java\r\nD:\\github_re\\swuFind\\swuFind\\src\\main\\java\\swu606309\\swuFind\\domain\\Favorite.java\r\nD:\\github_re\\swuFind\\swuFind\\src\\main\\java\\swu606309\\swuFind\\util\\JedisUtil.java\r\n>>>>>>> d74edb55b44e41f3a7d57da50211fbd2234b3cf0\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst b/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+--- a/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst	(revision 86b8e7ead3fc979c156f0842c78cb585dbbc3f6c)
++++ b/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst	(date 1637988912506)
+@@ -1,4 +1,3 @@
+-<<<<<<< HEAD
+ D:\swuFind\swuFind\src\main\java\swu606309\swuFind\domain\Favorite.java
+ D:\swuFind\swuFind\src\main\java\swu606309\swuFind\util\UuidUtil.java
+ D:\swuFind\swuFind\src\main\java\swu606309\swuFind\dao\impl\CategoryDaoImpl.java
+@@ -24,30 +23,3 @@
+ D:\swuFind\swuFind\src\main\java\swu606309\swuFind\service\CategoryService.java
+ D:\swuFind\swuFind\src\main\java\swu606309\swuFind\web\filter\CharchaterFilter.java
+ D:\swuFind\swuFind\src\main\java\swu606309\swuFind\domain\Category.java
+-=======
+-D:\github_re\swuFind\swuFind\src\main\java\swu606309\swuFind\web\servlet\CheckCodeServlet.java
+-D:\github_re\swuFind\swuFind\src\main\java\swu606309\swuFind\domain\Seller.java
+-D:\github_re\swuFind\swuFind\src\main\java\swu606309\swuFind\dao\CategoryDao.java
+-D:\github_re\swuFind\swuFind\src\main\java\swu606309\swuFind\domain\RouteImg.java
+-D:\github_re\swuFind\swuFind\src\main\java\swu606309\swuFind\service\CategoryService.java
+-D:\github_re\swuFind\swuFind\src\main\java\swu606309\swuFind\util\Md5Util.java
+-D:\github_re\swuFind\swuFind\src\main\java\swu606309\swuFind\domain\User.java
+-D:\github_re\swuFind\swuFind\src\main\java\swu606309\swuFind\domain\ResultInfo.java
+-D:\github_re\swuFind\swuFind\src\main\java\swu606309\swuFind\domain\Route.java
+-D:\github_re\swuFind\swuFind\src\main\java\swu606309\swuFind\domain\Category.java
+-D:\github_re\swuFind\swuFind\src\main\java\swu606309\swuFind\web\servlet\CategoryServlet.java
+-D:\github_re\swuFind\swuFind\src\main\java\swu606309\swuFind\web\servlet\UserServlet.java
+-D:\github_re\swuFind\swuFind\src\main\java\swu606309\swuFind\util\JDBCUtils.java
+-D:\github_re\swuFind\swuFind\src\main\java\swu606309\swuFind\util\UuidUtil.java
+-D:\github_re\swuFind\swuFind\src\main\java\swu606309\swuFind\util\MailUtils.java
+-D:\github_re\swuFind\swuFind\src\main\java\swu606309\swuFind\service\UserService.java
+-D:\github_re\swuFind\swuFind\src\main\java\swu606309\swuFind\service\impl\CategoryServiceImpl.java
+-D:\github_re\swuFind\swuFind\src\main\java\swu606309\swuFind\web\filter\CharchaterFilter.java
+-D:\github_re\swuFind\swuFind\src\main\java\swu606309\swuFind\web\servlet\BaseServlet.java
+-D:\github_re\swuFind\swuFind\src\main\java\swu606309\swuFind\service\impl\UserServiceImpl.java
+-D:\github_re\swuFind\swuFind\src\main\java\swu606309\swuFind\dao\impl\CategoryDaoImpl.java
+-D:\github_re\swuFind\swuFind\src\main\java\swu606309\swuFind\dao\UserDao.java
+-D:\github_re\swuFind\swuFind\src\main\java\swu606309\swuFind\dao\impl\UserDaoImpl.java
+-D:\github_re\swuFind\swuFind\src\main\java\swu606309\swuFind\domain\Favorite.java
+-D:\github_re\swuFind\swuFind\src\main\java\swu606309\swuFind\util\JedisUtil.java
+->>>>>>> d74edb55b44e41f3a7d57da50211fbd2234b3cf0
+Index: target/classes/druid.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>driverClassName=com.mysql.cj.jdbc.Driver\r\nurl=jdbc:mysql://localhost:3306/swufind?useUnicode=true&characterEncoding=UTF-8&userSSL=false&serverTimezone=GMT%2B8\r\nusername=zinkt\r\npassword=wjc10245111nine\r\ninitialSize=5\r\nmaxActive=10\r\nmaxWait=3000
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>ISO-8859-1
+===================================================================
+diff --git a/target/classes/druid.properties b/target/classes/druid.properties
+--- a/target/classes/druid.properties	(revision 86b8e7ead3fc979c156f0842c78cb585dbbc3f6c)
++++ b/target/classes/druid.properties	(date 1637987778020)
+@@ -1,7 +1,7 @@
+ driverClassName=com.mysql.cj.jdbc.Driver
+ url=jdbc:mysql://localhost:3306/swufind?useUnicode=true&characterEncoding=UTF-8&userSSL=false&serverTimezone=GMT%2B8
+-username=zinkt
+-password=wjc10245111nine
++username=root
++password=pll1013
+ initialSize=5
+ maxActive=10
+ maxWait=3000
+\ No newline at end of file
+Index: src/main/resources/druid.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>driverClassName=com.mysql.cj.jdbc.Driver\r\nurl=jdbc:mysql://localhost:3306/swuFind?useUnicode=true&characterEncoding=UTF-8&userSSL=false&serverTimezone=GMT%2B8\r\nusername=swuFind\r\npassword=swu606309\r\ninitialSize=5\r\nmaxActive=10\r\nmaxWait=3000
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>ISO-8859-1
+===================================================================
+diff --git a/src/main/resources/druid.properties b/src/main/resources/druid.properties
+--- a/src/main/resources/druid.properties	(revision 86b8e7ead3fc979c156f0842c78cb585dbbc3f6c)
++++ b/src/main/resources/druid.properties	(date 1637850142242)
+@@ -1,7 +1,7 @@
+ driverClassName=com.mysql.cj.jdbc.Driver
+-url=jdbc:mysql://localhost:3306/swuFind?useUnicode=true&characterEncoding=UTF-8&userSSL=false&serverTimezone=GMT%2B8
+-username=swuFind
+-password=swu606309
++url=jdbc:mysql://localhost:3306/swufind?useUnicode=true&characterEncoding=UTF-8&userSSL=false&serverTimezone=GMT%2B8
++username=root
++password=pll1013
+ initialSize=5
+ maxActive=10
+ maxWait=3000
+\ No newline at end of file
+Index: swufind.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule=\"true\" type=\"JAVA_MODULE\" version=\"4\">\r\n  <component name=\"FacetManager\">\r\n    <facet type=\"web\" name=\"Web\">\r\n      <configuration>\r\n        <webroots>\r\n          <root url=\"file://$MODULE_DIR$/src/main/webapp\" relative=\"/\" />\r\n        </webroots>\r\n      </configuration>\r\n    </facet>\r\n  </component>\r\n  <component name=\"NewModuleRootManager\" LANGUAGE_LEVEL=\"JDK_14\">\r\n    <output url=\"file://$MODULE_DIR$/target/classes\" />\r\n    <output-test url=\"file://$MODULE_DIR$/target/test-classes\" />\r\n    <content url=\"file://$MODULE_DIR$\">\r\n      <sourceFolder url=\"file://$MODULE_DIR$/src/main/java\" isTestSource=\"false\" />\r\n      <sourceFolder url=\"file://$MODULE_DIR$/src/main/resources\" type=\"java-resource\" />\r\n      <excludeFolder url=\"file://$MODULE_DIR$/target\" />\r\n    </content>\r\n    <orderEntry type=\"inheritedJdk\" />\r\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\r\n    <orderEntry type=\"library\" scope=\"TEST\" name=\"Maven: junit:junit:3.8.1\" level=\"project\" />\r\n    <orderEntry type=\"library\" scope=\"PROVIDED\" name=\"Maven: javax.servlet:javax.servlet-api:3.1.0\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Maven: mysql:mysql-connector-java:8.0.20\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Maven: com.google.protobuf:protobuf-java:3.6.1\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Maven: com.alibaba:druid:1.0.9\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Maven: org.springframework:spring-core:4.1.2.RELEASE\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Maven: org.springframework:spring-jdbc:4.1.2.RELEASE\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Maven: org.springframework:spring-tx:4.1.2.RELEASE\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Maven: org.springframework:spring-beans:4.1.2.RELEASE\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Maven: commons-logging:commons-logging:1.1.1\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Maven: commons-beanutils:commons-beanutils:1.9.2\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Maven: commons-collections:commons-collections:3.2.1\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Maven: com.fasterxml.jackson.core:jackson-databind:2.3.3\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Maven: com.fasterxml.jackson.core:jackson-core:2.3.3\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Maven: com.fasterxml.jackson.core:jackson-annotations:2.3.3\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Maven: javax.mail:javax.mail-api:1.5.6\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Maven: com.sun.mail:javax.mail:1.5.3\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Maven: javax.activation:activation:1.1\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Maven: redis.clients:jedis:2.7.0\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Maven: org.apache.commons:commons-pool2:2.3\" level=\"project\" />\r\n  </component>\r\n</module>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/swufind.iml b/swufind.iml
+--- a/swufind.iml	(revision 86b8e7ead3fc979c156f0842c78cb585dbbc3f6c)
++++ b/swufind.iml	(date 1637849932061)
+@@ -3,6 +3,9 @@
+   <component name="FacetManager">
+     <facet type="web" name="Web">
+       <configuration>
++        <descriptors>
++          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/src/main/webapp/WEB-INF/web.xml" />
++        </descriptors>
+         <webroots>
+           <root url="file://$MODULE_DIR$/src/main/webapp" relative="/" />
+         </webroots>
+Index: .idea/artifacts/swufind_war_exploded2.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/artifacts/swufind_war_exploded2.xml b/.idea/artifacts/swufind_war_exploded2.xml
+new file mode 100644
+--- /dev/null	(date 1637849842561)
++++ b/.idea/artifacts/swufind_war_exploded2.xml	(date 1637849842561)
+@@ -0,0 +1,13 @@
++<component name="ArtifactManager">
++  <artifact type="exploded-war" name="swufind:war exploded2">
++    <output-path>$PROJECT_DIR$/out/artifacts/swufind_war_exploded2</output-path>
++    <root id="root">
++      <element id="javaee-facet-resources" facet="swufind/web/Web" />
++      <element id="directory" name="WEB-INF">
++        <element id="directory" name="classes">
++          <element id="module-output" name="swufind" />
++        </element>
++      </element>
++    </root>
++  </artifact>
++</component>
+\ No newline at end of file
