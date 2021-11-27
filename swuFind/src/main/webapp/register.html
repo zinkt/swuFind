@@ -37,16 +37,19 @@
             return flag;
         }
         function checkPassword(){
-            var password1 = $("#passwd_input1").val()
-            var password2 = $("#passwd_input2").val();
+            var password1 = $("#password").val()
+            var password2 = $("#password2").val();
             //定义正则
             var reg_password = /^\w{8,20}$/;
             //判断，给出提示信息
             var flag = reg_password.test(password1) && reg_password.test(password2) && password1.value === password2.value;
             if(flag) {
                 $("#password").css("border","");
+                $("#password2").css("border","");
+
             }else{
                 $("#password").css("border","1px solid red");
+                $("#password2").css("border","1px solid red");
             }
             return flag;
         }
@@ -65,11 +68,10 @@
         $(function (){
             //表单提交时
             $("#registerForm").submit(function (){
-                alert("submit");
                 //发送数据到服务器
                 if (checkUsername() && checkPassword() && checkEmail()){
                     // 提交serialize序列化的表单数据到registUserServlet（以后后端的一个servlet）
-                    $.post("/user/register",$(this).serialize(),function (data){
+                    $.post("user/register",$(this).serialize(),function (data){
                         //处理服务器响应的数据 ResultInfo中定义的：data(flag:true/false,errorMsg)
                         if (data.flag){
                             location.href="register_ok.html";
@@ -127,10 +129,10 @@
                 <input type="email" name="email" id="email" placeholder="请输入您的电子邮箱" class="contact-input" onblur="checkEmail()" required=""/>
               </div>
 				 <div class="form-group">
-                <input type="password" name="" id="passwd_input1" placeholder="请输入密码" class="contact-input" onblur="checkPassword()" required=""/>
+                <input type="password" name="password" id="password" placeholder="请输入密码" class="contact-input" onblur="checkPassword()" required=""/>
               </div>
                 <div class="form-group">
-                <input type="password" name="" id="passwd_input2" placeholder="请再次输入密码确认" class="contact-input" onblur="checkPassword()" required=""/>
+                <input type="password" name="" id="password2" placeholder="请再次输入密码确认" class="contact-input" onblur="checkPassword()" required=""/>
               </div>
                 <tr>
                     <td class="td_left">
@@ -166,7 +168,7 @@
 
   <!--/w3l-footer-29-main-->
 <div id="footer"></div>
-  <script src="assets/js/jquery-3.3.1.min.js"></script>
+<!--  <script src="assets/js/jquery-3.3.1.min.js"></script>-->
   <script src="assets/js/theme-change.js"></script>
   <!--/slider-js-->
   <script src="assets/js/jquery.min.js"></script>
