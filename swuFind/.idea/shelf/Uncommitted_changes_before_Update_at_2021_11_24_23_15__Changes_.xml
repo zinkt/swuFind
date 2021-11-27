@@ -1,0 +1,14 @@
+<changelist name="Uncommitted_changes_before_Update_at_2021_11_24_23_15_[Changes]" date="1637766911197" recycled="false" toDelete="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_11_24_23_15_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 2021/11/24 23:15 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="target/tomcat/logs/access_log.2021-11-19" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_11_24_23_15_[Changes]/access_log.2021-11-19" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/tomcat/work/Tomcat/localhost/swuFind/SESSIONS.ser" />
+    <option name="AFTER_PATH" value="target/tomcat/work/Tomcat/localhost/swuFind/SESSIONS.ser" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_11_24_23_15_[Changes]/SESSIONS.ser" />
+  </binary>
+</changelist>
