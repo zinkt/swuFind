@@ -15,8 +15,6 @@
   <link rel="stylesheet" href="assets/css/style-starter.css">
   <!-- Template CSS -->
 	<style>
-#main{padding:10px 0; border-top:1px solid #B6B6B6}
-.ctbox{ margin:0 auto; width:300px; border:1px}
 #register{margin: auto;margin-left: 40%;}
 
 </style>
@@ -37,12 +35,12 @@
             return flag;
         }
         function checkPassword(){
-            var password1 = $("#password").val()
+            var password = $("#password").val()
             var password2 = $("#password2").val();
             //定义正则
             var reg_password = /^\w{8,20}$/;
             //判断，给出提示信息
-            var flag = reg_password.test(password1) && reg_password.test(password2) && password1.value === password2.value;
+            var flag = password.value === password2.value && reg_password.test(password2);
             if(flag) {
                 $("#password").css("border","");
                 $("#password2").css("border","");
@@ -70,6 +68,7 @@
             $("#registerForm").submit(function (){
                 //发送数据到服务器
                 if (checkUsername() && checkPassword() && checkEmail()){
+                    $("#errorMsg").html("");
                     // 提交serialize序列化的表单数据到registUserServlet（以后后端的一个servlet）
                     $.post("user/register",$(this).serialize(),function (data){
                         //处理服务器响应的数据 ResultInfo中定义的：data(flag:true/false,errorMsg)
@@ -81,7 +80,6 @@
                     });
                 }
                 return false;
-
             });
             // //	组件失去焦点时
             // $("#username").blur(checkUsername);
@@ -135,11 +133,8 @@
                 <input type="password" name="" id="password2" placeholder="请再次输入密码确认" class="contact-input" onblur="checkPassword()" required=""/>
               </div>
                 <tr>
-                    <td class="td_left">
-                        <label for="check">验证码</label>
-                    </td>
                     <td class="td_right check">
-                        <input type="text" id="check" name="check" class="check">
+                        <input type="text" id="check" name="check" placeholder="请输入验证码" class="check">
                         <img src="checkCode" height="32px" alt="" onclick="changeCheckCode(this)">
                         <script type="text/javascript">
                             //图片点击事件

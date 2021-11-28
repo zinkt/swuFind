@@ -12,25 +12,25 @@
               $("#span_username").html(msg);
           });
         //分类数据
-        $.get("category/findAll",{},function (data) {
-          /*、
-          <li class="nav-item">
-              <a class="nav-link" href="index.html">11 <span class="sr-only">(current)</span></a>
-            </li>
-           */
-          var lis='<li class="nav-item"><a class="nav-link" href="index.html">首页</a></li>';
-          //遍历数组
-          /*
-          变量从1开始，结束于最后一个之前（首页和联系我们）
-           */
-          for (var i=1;i<data.length-1;i++){
-            var li='<li class="nav-item"><a class="nav-link" href="searchpeople.html?cid='+data[i].cid+'">'+data[i].cname+'</a></li>';
-            lis+=li;
-          }
-          var _li='<li class="nav-item"><a class="nav-link" href="contact.html">联系我们</a></li>';
-          lis=lis+_li;
-          $("#category").html(lis);
-        },"json");
+      //   $.get("category/findAll",{},function (data) {
+      //     /*、
+      //     <li class="nav-item">
+      //         <a class="nav-link" href="index.html">11 <span class="sr-only">(current)</span></a>
+      //       </li>
+      //      */
+      //     var lis='<li class="nav-item"><a class="nav-link" href="index.html">首页</a></li>';
+      //     //遍历数组
+      //     /*
+      //     变量从1开始，结束于最后一个之前（首页和联系我们）
+      //      */
+      //     for (var i=1;i<data.length-1;i++){
+      //       var li='<li class="nav-item"><a class="nav-link" href="searchpeople.html?cid='+data[i].cid+'">'+data[i].cname+'</a></li>';
+      //       lis+=li;
+      //     }
+      //     var _li='<li class="nav-item"><a class="nav-link" href="contact.html">联系我们</a></li>';
+      //     lis=lis+_li;
+      //     $("#category").html(lis);
+      //   },"json");
       });
  </script>
 <!--header-->
