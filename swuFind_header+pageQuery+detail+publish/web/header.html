@@ -1,0 +1,112 @@
+<!doctype html>
+<meta charset="utf-8">
+<script src = "https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!--这两个js文件有问题-->
+<!--<script src="js/getParameter.js"></script>-->
+<!--<script type="text/javascript" src="js/alert.js"></script>-->
+<!--登录后修改用户-->
+<script>
+      $(function (){
+         alert("header");
+          // $.get("user/findOneUser",{},function (data){
+          //     var msg = "欢迎回来："+data.username;
+          //     $("#span_username").html(msg);
+          // });
+        //分类数据
+        $.get("/category/findAll",{},function (data) {
+          /*、
+          <li class="nav-item">
+              <a class="nav-link" href="index.html">11 <span class="sr-only">(current)</span></a>
+            </li>
+           */
+          var lis='<li class="nav-item"><a class="nav-link" href="index.html">首页</a></li>';
+          //遍历数组
+          /*
+          变量从1开始，结束于最后一个之前（首页和联系我们）
+           */
+          for (var i=1;i<data.length-1;i++){
+            var li='<li class="nav-item"><a class="nav-link" href="searchpeople.html?cid='+data[i].cid+'">'+data[i].cname+'</a></li>';
+            lis+=li;
+          }
+          var _li='<li class="nav-item"><a class="nav-link" href="contact.html">联系我们</a></li>';
+          lis=lis+_li;
+          $("#category").html(lis);
+        },"json");
+      });
+ </script>
+<!--header-->
+  <header id="header" class="fixed-top">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg stroke">
+        <h1><a class="navbar-brand mr-lg-5" href="index.html">
+            swuFind
+          </a></h1>
+        <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
+          data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+          <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto" id="category">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Test<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Test</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Test</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Test</a>
+            </li>
+			   <li class="nav-item">
+              <a class="nav-link" href="contact.html">Test</a>
+            </li>
+          </ul>
+        </div>
+		<!--用户登录-->
+		 <!--用户登录状态-->
+		 <div class="login collapse navbar-collapse" id="usr">
+            	
+                <span id="span_username">欢迎回来</span>
+			 <ul class="navbar-nav mr-auto">
+		     <li class="nav-item">
+              <a href="publish.html" class="nav-link">+发布信息</a>
+			 </li>
+			 <li class="nav-item">
+              <a href="myfavorite.html" class="collection nav-link">我的收藏</a>
+			 </li>
+				 
+			 <li class="nav-item">
+                <a class="nav-link" href="javascript:location.href='user/exit'">退出</a>
+				</li>
+			 </ul>
+         </div>
+		<!--用户未登录状态-->
+        <div class="d-lg-block d-none login_out"  id="log">
+          <span><a href="login.html" class="btn btn-style btn-secondary">登录</a></span>
+        </div>
+		
+
+        <!-- toggle switch for light and dark theme -->
+        <div class="mobile-position">
+          <nav class="navigation">
+            <div class="theme-switch-wrapper">
+              <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox">
+                <div class="mode-container">
+                  <i class="gg-sun"></i>
+                  <i class="gg-moon"></i>
+                </div>
+              </label>
+            </div>
+          </nav>
+        </div>
+        <!-- //toggle switch for light and dark theme -->
+      </nav>
+    </div>
+  </header>
+  <!-- //header -->

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Searchpeople</title>
+  <!-- google fonts -->
+  <link href="http://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/search.css">
+    <!-- google fonts -->
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="assets/css/style-starter.css">
+  <!-- Template CSS -->
+	<style>
+#main{ width:; float:center; padding:10px 0; border-top:1px solid #B6B6B6}
+.ctbox{ margin:0 auto; width:300px; border:1px}
+		#speople{}
+		.speople{margin: 50px}
+</style>
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <script>
+        //页面加载完成后执行
+        $(function () {
+            alert("search")
+            var search =location.search;
+            var cid =search.split("=")[1];
+            //页面加载后调用load函数发送ajax请求获取展示内容，传送cid和currentPage，页面刚刚加载完成是currentPage为1
+            load(cid,1);
+        });
+        function load(cid,currentPage)
+        {
+            //发送ajax请求，四个部分分别为：url，传递参数，接收参数后执行函数，设置服务器响应的数据类型为Json
+            $.get("/findByPageServlet",{cid:cid,currentPage:currentPage},function (pb){
+                //解析pagebean数据，展示到页面上
+                //1.分页工具条数据展示
+                // 1.1设置总页数和总页码
+                $("#totalCount").html(pb.totalCount);
+                $("#totalPage").html(pb.totalPage);
+                var lis="";
+                //给网页页码绑定onclick时间，调用load函数发送ajax请求刷新页面展示内容。，超链接void（0）表示do nothing
+                var firstPage='<li onclick="javascript:load('+cid+')"><a href="javascript:void(0)">首页</a></li>';
+
+                var beforeNum=pb.currentPage-1;
+                if(beforeNum<=0)
+                {
+                    beforeNum=1;
+                }
+                var beforePage='<li onclick="javascript:load('+cid+','+beforeNum+')" class="threeword"><a href="javascript:void(0)">上一页</a></li>';
+                lis+=firstPage;
+                lis+=beforePage;
+
+                //1.2展示分页页码
+                /*
+                    1.一共展示10个页码，能够达到前5后4的效果
+                    2.如果前边不够5个，后边补齐，使得总共展示10个页码
+                    3.如果后边不足4个，前边补齐，使得总共展示10个页码
+                 */
+                //定义开始和结束的位置
+                var begin;
+                var end;
+                //如果展示页面不足10页
+                if(pb.totalPage<10)
+                {
+                    begin=1;
+                    end=pb.totalPage;
+                }
+                else //页面数量大于等于10页
+                {
+                    //一共展示10个页码，能够达到前5后4的效果
+                    begin=pb.currentPage-5;
+                    end=pb.currentPage+4;
+                    if(begin<1)
+                    {
+                        begin=1;
+                        end=begin+9;
+                    }
+                    if(end>pb.totalPage)
+                    {
+                        end=pb.totalPage;
+                        begin=end-9;
+                    }
+                }
+                for (var i = begin; i <= end ; i++) {
+                    //创建页码的li
+                    var li;
+                    //判断当前页码是否等于i
+                    if(pb.currentPage == i)
+                    {
+                        li='<li class="curPage" onclick="javascript:load('+cid+','+i+')"><a href="javascript:void(0)">'+i+'</a></li>';
+                    }
+                    //如果当前页码不等于i，则会再次发送ajax请求（load），请求新的数据
+                    else
+                    {
+                        li='<li onclick="javascript:load('+cid+','+i+')"><a href="javascript:void(0)">'+i+'</a></li>';
+                    }
+                    //存放li
+                    lis+=li;
+                }
+                var nextNum=pb.currentPage+1;
+                var nextPage='<li onclick="javascript:load('+cid+','+nextNum+')" class="threeword"><a href="javascript:void(0)">下一页</a></li>';
+                var lastNum=pb.totalPage;
+                var lastPage='<li onclick="javascript:load('+cid+','+lastNum+')" class="threeword"><a href="javascript:;">末页</a></li>';
+                lis +=nextPage;
+                lis +=lastPage;
+                //将正确的li放入到ul中
+                $("#upageNum").html(lis);
+
+                //2.列表数据展示
+                var info_lis="";
+                for (var i = 0; i < pb.list.length; i++) {
+                    var info = pb.list[i];
+                    var did=info.did;
+//var li='<li class="nav-item"><a class="nav-link" href="searchpeople.html?cid='+data[i].cid+'">'+data[i].cname+'</a></li>';
+                    var li='<li>\n' +
+                        '                            <div class="img"><img src="'+info.rimage+'" alt="" style="height: 169px; weight: 299px"></div>\n' +
+                        '                            <div class="text1">\n' +
+                        '                                <p>'+info.title+'</p>\n' +
+                        '                                <br/>\n' +
+                        '                                <p>'+info.intro+'</p>\n' +
+                        '                            </div>\n' +
+                        '                            <div class="price">\n' +
+                        '                               <a href="detail.html?did='+did+'">查看详情</a>\n' +
+                        '                            </div>\n' +
+                        '                        </li>'
+                    info_lis +=li;
+                }
+                $("#info").html(info_lis);
+                //定位到页面顶部
+                window.scrollTo(0,0);
+            },"json")
+        }
+       
+    </script>
+</head>
+<body>
+  <!--header-->
+	<div id="header"></div>
+  <!-- //header -->
+  <!-- about breadcrumb -->
+  <section class="w3l-about-breadcrumb text-left">
+    <div class="breadcrumb-bg breadcrumb-bg-about py-sm-5 py-4">
+      <div class="container">
+        <h2 class="title">Look for people</h2>
+        <ul class="breadcrumbs-custom-path mt-2">
+          <li><a href="#url">Home</a></li>
+          <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span>Look for people</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+	<div class="speople">
+    <div class="page_one">
+        <div class="contant">
+            
+            <div class="xinxi clearfix">
+                <div class="left">
+                    <ul id="info">
+                        <li>
+                            <div class="img"><img src="images/04-search_03.jpg" alt=""></div>
+                            <div class="text1">
+                                <p>主要信息</p>
+                                <br/>
+                                <p>次要信息</p>
+                            </div>
+                            <div class="price">
+                               <a href="detail.html">查看详情</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img"><img src="images/04-search_03.jpg" alt=""></div>
+                            <div class="text1">
+                                <p>找人</p>
+                                <br/>
+                                <p>找个男的0.0</p>
+                            </div>
+                            <div class="price">
+                                <p class="price_num">
+                                    
+                                </p>
+                                <p><a href="route_detail.html">查看详情</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img"><img src="images/04-search_03.jpg" alt=""></div>
+                            <div class="text1">
+                                <p>寻人主要信息</p>
+                                <br/>
+                                <p>寻人次要信息</p>
+                            </div>
+                            <div class="price">
+                                <p><a href="route_detail.html">查看详情</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img"><img src="images/04-search_03.jpg" alt=""></div>
+                            <div class="text1">
+                                <p>寻人主要信息</p>
+                                <br/>
+                                <p>寻人次要信息</p>
+                            </div>
+                            <div class="price">
+                              
+                                <p><a href="route_detail.html">查看详情</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img"><img src="images/04-search_03.jpg" alt=""></div>
+                            <div class="text1">
+                                <p>寻人主要信息</p>
+                                <br/>
+                                <p>寻人次要信息</p>
+                            </div>
+                            <div class="price">
+                                
+                                <p><a href="route_detail.html">查看详情</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img"><img src="images/04-search_03.jpg" alt=""></div>
+                            <div class="text1">
+                                <p>寻人主要信息</p>
+                                <br/>
+                                <p>寻人次要信息</p>
+                            </div>
+                            <div class="price">
+                              
+                                <p><a href="route_detail.html">查看详情</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img"><img src="images/04-search_03.jpg" alt=""></div>
+                            <div class="text1">
+                                <p>寻人主要信息</p>
+                                <br/>
+                                <p>寻人次要信息</p>
+                            </div>
+                            <div class="price">
+                                
+                                <p><a href="route_detail.html">查看详情</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img"><img src="images/04-search_03.jpg" alt=""></div>
+                            <div class="text1">
+                                <p>寻物主要信息</p>
+                                <br/>
+                                <p>寻人次要信息</p>
+                            </div>
+                            <div class="price">
+                                
+                                <p><a href="route_detail.html">查看详情</a></p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="page_num_inf">
+                        <i></i> 共
+                        <span id="totalPage">123</span>页<span id="totalCount">500</span>条
+                    </div>
+                    <div class="pageNum">
+                        <ul id="upageNum">
+                            <li><a href="">首页</a></li>
+                            <li class="threeword"><a href="#">上一页</a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">6</a></li>
+                            <li><a href="#">7</a></li>
+                            <li><a href="#">8</a></li>
+                            <li><a href="#">9</a></li>
+                            <li><a href="#">10</a></li>
+                            <li class="threeword"><a href="javascript:;">下一页</a></li>
+                            <li class="threeword"><a href="javascript:;">末页</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="top">
+                        <div class="hot">HOT</div>
+                        <span>热门推荐</span>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="left"><img src="images/04-search_09.jpg" alt=""></div>
+                            <div class="right">
+								<p>清远新银盏温泉度假村酒店/自由行套...</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="left"><img src="images/04-search_09.jpg" alt=""></div>
+                            <div class="right">
+                                <p>清远新银盏温泉度假村酒店/自由行套...</p>
+                                
+                            </div>
+                        </li>
+                        <li>
+                            <div class="left"><img src="images/04-search_09.jpg" alt=""></div>
+                            <div class="right">
+                                <p>清远新银盏温泉度假村酒店/自由行套...</p>
+                                
+                            </div>
+                        </li>
+                        <li>
+                            <div class="left"><img src="images/04-search_09.jpg" alt=""></div>
+                            <div class="right">
+                                <p>清远新银盏温泉度假村酒店/自由行套...</p>
+                                
+                            </div>
+                        </li>
+                        <li>
+                            <div class="left"><img src="images/04-search_09.jpg" alt=""></div>
+                            <div class="right">
+                                <p>清远新银盏温泉度假村酒店/自由行套...</p>
+                                
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  <div id="footer"></div>
+
+  <!-- Template JavaScript -->
+   <script src="assets/js/jquery-3.3.1.min.js"></script>
+  <script src="assets/js/theme-change.js"></script>
+  <!--/slider-js-->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/modernizr-2.6.2.min.js"></script>
+  <script src="assets/js/jquery.zoomslider.min.js"></script>
+  <!--//slider-js-->
+  <script src="assets/js/owl.carousel.js"></script>
+  <!-- script for tesimonials carousel slider -->
+  <script>
+    $(document).ready(function () {
+      $("#owl-demo1").owlCarousel({
+        loop: true,
+        margin: 20,
+        nav: false,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1,
+            nav: false
+          },
+          736: {
+            items: 1,
+            nav: false
+          },
+          1000: {
+            items: 1,
+            nav: false,
+            loop: true
+          }
+        }
+      })
+    })
+  </script>
+  <!-- //script for tesimonials carousel slider -->
+  <!-- stats number counter-->
+  <script src="assets/js/jquery.waypoints.min.js"></script>
+  <script src="assets/js/jquery.countup.js"></script>
+  <script>
+    $('.counter').countUp();
+  </script>
+  <!-- //stats number counter -->
+
+  <!--/MENU-JS-->
+  <script>
+    $(window).on("scroll", function () {
+      var scroll = $(window).scrollTop();
+
+      if (scroll >= 80) {
+        $("#site-header").addClass("nav-fixed");
+      } else {
+        $("#site-header").removeClass("nav-fixed");
+      }
+    });
+
+    //Main navigation Active Class Add Remove
+    $(".navbar-toggler").on("click", function () {
+      $("header").toggleClass("active");
+    });
+    $(document).on("ready", function () {
+      if ($(window).width() > 991) {
+        $("header").removeClass("active");
+      }
+      $(window).on("resize", function () {
+        if ($(window).width() > 991) {
+          $("header").removeClass("active");
+        }
+      });
+    });
+  </script>
+  <!--//MENU-JS-->
+
+  <script src="assets/js/bootstrap.min.js"></script>
+  <!--导入布局js，共享header和footer-->
+  <script type="text/javascript" src="js/include.js"></script>
+  
+
+</body>
+
+</html>
