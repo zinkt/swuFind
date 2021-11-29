@@ -1,0 +1,49 @@
+<changelist name="Uncommitted_changes_before_Update_at_2021_11_27_10_12_[Changes]" date="1637979138307" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_11_27_10_12_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 2021/11/27 10:12 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="target/classes/swu606309/swuFind/service/impl/CategoryServiceImpl.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_11_27_10_12_[Changes]/CategoryServiceImpl.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="target/classes/swu606309/swuFind/dao/CategoryDao.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_11_27_10_12_[Changes]/CategoryDao.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_2021_11_24_22_08_[Changes]/access_log.2021-11-19" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_11_27_10_12_[Changes]/access_log.2021-11-19" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="target/classes/swu606309/swuFind/dao/impl/CategoryDaoImpl.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_11_27_10_12_[Changes]/CategoryDaoImpl.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="target/classes/swu606309/swuFind/web/servlet/CategoryServlet.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_11_27_10_12_[Changes]/CategoryServlet.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_2021_11_24_23_15_[Changes]/SESSIONS.ser" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_11_27_10_12_[Changes]/SESSIONS.ser" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_2021_11_24_23_15_[Changes]/access_log.2021-11-19" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_11_27_10_12_[Changes]/access_log1.2021-11-19" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_2021_11_24_22_08_[Changes]/SESSIONS.ser" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_11_27_10_12_[Changes]/SESSIONS1.ser" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="target/classes/swu606309/swuFind/service/CategoryService.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_11_27_10_12_[Changes]/CategoryService.class" />
+  </binary>
+</changelist>
