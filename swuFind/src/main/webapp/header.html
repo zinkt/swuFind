@@ -1,36 +1,38 @@
 <!doctype html>
+<meta charset="utf-8">
 <script src = "https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/getParameter.js"></script>
+<!--这两个js文件有问题-->
+<!--<script src="js/getParameter.js"></script>-->
 <!--<script type="text/javascript" src="js/alert.js"></script>-->
-<!--这个alert.js有问题-->
 <!--登录后修改用户-->
 <script>
       $(function (){
-          $.get("user/findOneUser",{},function (data){
-              var msg = "欢迎回来："+data.username;
-              $("#span_username").html(msg);
-          });
+         alert("header");
+          // $.get("user/findOneUser",{},function (data){
+          //     var msg = "欢迎回来："+data.username;
+          //     $("#span_username").html(msg);
+          // });
         //分类数据
-      //   $.get("category/findAll",{},function (data) {
-      //     /*、
-      //     <li class="nav-item">
-      //         <a class="nav-link" href="index.html">11 <span class="sr-only">(current)</span></a>
-      //       </li>
-      //      */
-      //     var lis='<li class="nav-item"><a class="nav-link" href="index.html">首页</a></li>';
-      //     //遍历数组
-      //     /*
-      //     变量从1开始，结束于最后一个之前（首页和联系我们）
-      //      */
-      //     for (var i=1;i<data.length-1;i++){
-      //       var li='<li class="nav-item"><a class="nav-link" href="searchpeople.html?cid='+data[i].cid+'">'+data[i].cname+'</a></li>';
-      //       lis+=li;
-      //     }
-      //     var _li='<li class="nav-item"><a class="nav-link" href="contact.html">联系我们</a></li>';
-      //     lis=lis+_li;
-      //     $("#category").html(lis);
-      //   },"json");
+        $.get("/category/findAll",{},function (data) {
+          /*、
+          <li class="nav-item">
+              <a class="nav-link" href="index.html">11 <span class="sr-only">(current)</span></a>
+            </li>
+           */
+          var lis='<li class="nav-item"><a class="nav-link" href="index.html">首页</a></li>';
+          //遍历数组
+          /*
+          变量从1开始，结束于最后一个之前（首页和联系我们）
+           */
+          for (var i=1;i<data.length-1;i++){
+            var li='<li class="nav-item"><a class="nav-link" href="searchpeople.html?cid='+data[i].cid+'">'+data[i].cname+'</a></li>';
+            lis+=li;
+          }
+          var _li='<li class="nav-item"><a class="nav-link" href="contact.html">联系我们</a></li>';
+          lis=lis+_li;
+          $("#category").html(lis);
+        },"json");
       });
  </script>
 <!--header-->
@@ -49,25 +51,23 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav mr-auto" id="category">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">11 <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="index.html">Test<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="searchpeople.html">22</a>
+              <a class="nav-link" href="#">Test</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="searchthings.html">33</a>
+              <a class="nav-link" href="#">Test</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="other.html">33</a>
+              <a class="nav-link" href="#">Test</a>
             </li>
 			   <li class="nav-item">
-              <a class="nav-link" href="contact.html">44</a>
+              <a class="nav-link" href="contact.html">Test</a>
             </li>
           </ul>
         </div>
 		<!--用户登录-->
-
-		
 		 <!--用户登录状态-->
 		 <div class="login collapse navbar-collapse" id="usr">
             	

@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Publish</title>
+  <title>Contact</title>
   <!-- google fonts -->
   <link href="http://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link href="http://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap"
@@ -19,28 +19,17 @@
 #main{ width:; float:center; padding:10px 0; border-top:1px solid #B6B6B6}
 .ctbox{ margin:0 auto; width:300px; border:1px}
 </style>
-  <script>
-    $("#send").click(function ()
-    {
-      var title="hello";
-      $.get("/publish",{title:title},function (){
-        alert(title);
-      });
-    })
-
-  </script>
 </head>
-
 <body>
   <!--header--><div id="header"></div>  <!-- //header -->
   <!-- about breadcrumb -->
   <section class="w3l-about-breadcrumb text-left">
     <div class="breadcrumb-bg breadcrumb-bg-about py-sm-5 py-4">
       <div class="container py-2">
-        <h2 class="title">Publish</h2>
+        <h2 class="title">Contact us</h2>
         <ul class="breadcrumbs-custom-path mt-2">
           <li><a href="#url">Home</a></li>
-          <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span>Publish</li>
+          <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span>Contact us</li>
         </ul>
       </div>
     </div>
@@ -54,7 +43,7 @@
       <div class="contact-grids row">
 		  
       <!--<div class="col-lg-6 mt-lg-0 mt-5 contact-right">
-      <form action="" method="post" class="signin-form">
+      <form action="https://sendmail.w3layouts.com/submitForm" method="post" class="signin-form">
             <div class="input-grids">
               <div class="form-group">
                 <input type="text" name="w3lName" id="w3lName" placeholder="Your Name*" class="contact-input" />
@@ -92,7 +81,8 @@
           </div>
         </div>
 		 <div class="col-lg-6 mt-lg-0 mt-5 contact-right">
-			 <form accept-charset="UTF-8" action="" class="publish" id="new_topic" method="post">
+<!--           将内容提交到/PublishServlet中-->
+           <form accept-charset="UTF-8" action="/PublishServlet" class="publish" id="new_topic" method="post" enctype="multipart/form-data">
   <table width="100%" border="0" cellspacing="0" cellpadding="6">
     <colgroup><col width="140"><col></colgroup>
     <tbody>
@@ -101,7 +91,7 @@
   <th>文章标题</th>
   <td>
     <label>
-      <input  required id="topic_title" maxlength="10" name="postname" size="60" type="text">
+      <input  required id="topic_title" maxlength="10" name="title" size="60" type="text">
     </label>
   </td>
 </tr>
@@ -109,7 +99,7 @@
   <th valign="top">文章简介</th>
   <td>
     <label>
-      <textarea cols="62" rows="14" name="content" id="intro"></textarea>
+      <textarea cols="62" rows="14" name="intro"></textarea>
     </label>
   </td>
 </tr>
@@ -127,11 +117,11 @@
   <th valign="top">文章类别</th>
   <td>
     <div class="col-lg-6 contact-left">
-    	<select>
-			<option>寻人</option>
-			<option>寻物</option>
-			<option>其他</option>
-		</select>
+      <select name="cid">
+        <option value="2">寻人</option>
+        <option value="3">寻物</option>
+        <option value="4">其他</option>
+      </select>
     </div>
   </td>
 </tr>
@@ -141,10 +131,11 @@
     
 	<form>
 	  <!--<a><img src="assets/images/uploadpic.jpg"</a>-->
-      <input id="image" type="file" onchange='PreviewImage(this)';/>
+      <input name="rimage" type="file" onchange='PreviewImage(this)';/>
     </form>
     <!-- 图片展示容器 -->
-    <div class="img-cont"></div>
+    <div class="img-cont"></div> 
+    
   </td>
 </tr>
     <tr>
@@ -159,11 +150,11 @@
     </tr>
   </tbody></table>
 </form>
-
-
 			 </div>
         </div>
+
       </div>
+      
     </div>
 </section>
 <!-- /contact-form -->

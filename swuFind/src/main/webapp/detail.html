@@ -22,8 +22,28 @@
 }
 		#detail{height: 20px;}
 		.detail{margin-top: 100px}
-
 </style>
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <script>
+        $(function ()
+            {
+                //获取did
+                var search =location.search;
+                var did =search.split("=")[1];
+                alert(did);
+                //发送ajax请求，返回Jason数据
+                $.get("/detailServlet",{did:did},function (info){
+                    //调用数据，填充详情页
+                    $("#title").html(info.title);
+                    $("#intro").html(info.intro);
+                    $("#content").html(info.content);
+                    var src='<img src="'+info.rimage+'" alt="#"/>';
+                    $("#image").html(src);
+                },"json");
+            }
+        );
+
+    </script>
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -53,7 +73,7 @@
       <!--<div class="w3l-footer-16-main py-5">
         <div class="container">
           <div class="row">
-            <!--<div class="col-lg-6 column">
+           <div class="col-lg-6 column">
               <div class="row">
                 <div class="col-md-4 column">
                   <h3>Company</h3>
@@ -106,26 +126,22 @@
             <div class="row">
                <div class="col-md-10">
                   <div class="titlepage text_align_left ">
-                     <h2>Our News</h2>
-                     <p>Many desktop publishing packages and web page editors now useMany desktop publishing packages and web page editors now use
-                     </p>
+                     <h2 id="title">Title</h2>
+                     <p id="intro">Introduction</p>
                   </div>
                </div>
             </div>
             <div class="row d_flex">
                <div class="col-lg-6 col-md-12">
                   <div class="news_img" data-aos="fade-right" data-aos-offset="300"     data-aos-easing="ease-in-sine">
-                     <figure><img src="images/news1.png" alt="#"/></figure>
+                     <figure id="image"><img src="images/news1.png" alt="#"/></figure>
                      <div class="fer text_align_left">
-                       
                      </div>
                   </div>
                </div>
                <div class="col-lg-6 col-md-12">
                   <div class="recipe" data-aos="fade-left">
-                     <h3>Sell Owen Property Best Deal</h3>
                      <ul>
-                        <li>Post By : Dine Fine</li>
                         <li>
                            <a href="Javascript:void(0)">
                               Like 
@@ -158,8 +174,7 @@
                            </a>
                         </li>
                      </ul>
-                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there </p>
-                     <a href="detail.html">Read More</a>
+                     <p id="content">content</p>
                   </div>
                </div>
             </div>

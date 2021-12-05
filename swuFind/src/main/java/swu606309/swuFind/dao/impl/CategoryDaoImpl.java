@@ -26,7 +26,6 @@ public class CategoryDaoImpl implements CategoryDao {
     public List<Category> findAll() {
         String sql = "select * from tab_category order by cid" ;
         return template.query(sql, new BeanPropertyRowMapper<Category>(Category.class));
-
     }
 
     /**
