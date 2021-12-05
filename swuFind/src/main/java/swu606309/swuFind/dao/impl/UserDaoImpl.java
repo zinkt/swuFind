@@ -20,6 +20,7 @@ public class UserDaoImpl implements UserDao {
             user = template.queryForObject(sql,new BeanPropertyRowMapper<User>(User.class),username);
         } catch (Exception e) {
         }
+
         return user;
     }
 

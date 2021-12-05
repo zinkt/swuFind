@@ -23,7 +23,7 @@
             <scope>provided</scope>
         </dependency>
 
-<!--注意与本机版本一致-->
+        <!--注意与本机版本一致-->
         <!--mysql驱动-->
         <dependency>
             <groupId>mysql</groupId>
@@ -31,6 +31,16 @@
             <version>8.0.20</version>
             <scope>compile</scope>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+<!--        <dependency>-->
+<!--            <groupId>mysql</groupId>-->
+<!--            <artifactId>mysql-connector-java</artifactId>-->
+<!--            <version>5.1.47</version>-->
+<!--        </dependency>-->
+
+
+
+
         <!--druid连接池-->
         <dependency>
             <groupId>com.alibaba</groupId>
@@ -125,12 +135,12 @@
 <!--            <version>1.2.1</version>-->
 <!--        </dependency>-->
 
-        <dependency>
-            <groupId>org.glassfish.web</groupId>
-            <artifactId>jstl-impl</artifactId>
-            <version>1.2</version>
-            <scope>runtime</scope>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.glassfish.web</groupId>-->
+<!--            <artifactId>jstl-impl</artifactId>-->
+<!--            <version>1.2</version>-->
+<!--            <scope>runtime</scope>-->
+<!--        </dependency>-->
 
 
         <dependency>

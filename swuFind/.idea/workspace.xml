@@ -4,70 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="458c412b-af3a-43ee-9893-94efbed5d2ce" name="Changes" comment="登录完成">
-      <change afterPath="$PROJECT_DIR$/src/main/java/swu606309/swuFind/dao/PublishDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/swu606309/swuFind/dao/detailDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/swu606309/swuFind/dao/impl/PublishDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/swu606309/swuFind/dao/impl/detailDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/swu606309/swuFind/dao/impl/pageQueryDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/swu606309/swuFind/dao/pageQueryDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/swu606309/swuFind/domain/PageBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/swu606309/swuFind/domain/Publish_info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/swu606309/swuFind/domain/list_info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/swu606309/swuFind/service/PublishService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/swu606309/swuFind/service/detailService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/swu606309/swuFind/service/impl/PublishServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/swu606309/swuFind/service/impl/detailServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/swu606309/swuFind/service/impl/pageQueryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/swu606309/swuFind/service/pageQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/swu606309/swuFind/web/servlet/PublishServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/swu606309/swuFind/web/servlet/detailServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/swu606309/swuFind/web/servlet/pageQueryServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../swuFind_header+pageQuery+detail+publish/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="458c412b-af3a-43ee-9893-94efbed5d2ce" name="Changes" comment="尝试合并">
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/swufind_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/swufind_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_6_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_20.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_11_24_22_08_[Changes]/SESSIONS.ser" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_11_24_22_08_[Changes]/access_log.2021-11-19" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_11_24_22_08_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_11_24_22_08__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_11_27_10_12_[Changes]/CategoryDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_11_27_10_12_[Changes]/CategoryDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_11_27_10_12_[Changes]/CategoryService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_11_27_10_12_[Changes]/CategoryServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_11_27_10_12_[Changes]/CategoryServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_11_27_10_12_[Changes]/SESSIONS.ser" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_11_27_10_12_[Changes]/SESSIONS1.ser" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_11_27_10_12_[Changes]/access_log.2021-11-19" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_11_27_10_12_[Changes]/access_log1.2021-11-19" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_11_27_10_12_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_11_27_10_12__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2021_11_27_20_26____.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/在进行更新之前于_2021_11_27_20_26_取消提交了变更_[更改]/SESSIONS.ser" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/在进行更新之前于_2021_11_27_20_26_取消提交了变更_[更改]/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/swu606309/swuFind/dao/impl/CategoryDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/swu606309/swuFind/dao/impl/CategoryDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/swu606309/swuFind/web/filter/CharchaterFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/swu606309/swuFind/web/servlet/CategoryServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/swu606309/swuFind/web/servlet/CategoryServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/forgetpasswd.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/forgetpasswd.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/swu606309/swuFind/dao/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/swu606309/swuFind/dao/impl/UserDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/druid.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/druid.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/publish.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/publish.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/publish_ok.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/publish_ok.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/searchpeople.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/searchpeople.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/swufind.iml" beforeDir="false" afterPath="$PROJECT_DIR$/swufind.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/swu606309/swuFind/dao/impl/CategoryDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/swu606309/swuFind/dao/impl/CategoryDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/swu606309/swuFind/web/filter/CharchaterFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/swu606309/swuFind/web/servlet/CategoryServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/swu606309/swuFind/web/servlet/CategoryServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/swu606309/swuFind/web/servlet/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/swu606309/swuFind/web/servlet/UserServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../swuFind_header+pageQuery+detail+publish/swuFind_pageQuery.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../swuFind_header+pageQuery+detail+publish/swuFind_pageQuery.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/druid.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/druid.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../swuFind_header+pageQuery+detail+publish/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../swuFind_header+pageQuery+detail+publish/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +27,9 @@
     <setting file="file://$PROJECT_DIR$/src/main/java/swu606309/swuFind/web/servlet/UserServlet.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/webapp/register.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/swu606309/swuFind/web/servlet/BaseServlet.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
   </component>
   <component name="ProjectId" id="20rE5yo5ZbOq1rM5SndfquvxEH0" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -162,7 +111,9 @@
       <workItem from="1638082478549" duration="82000" />
       <workItem from="1638709027113" duration="3570000" />
       <workItem from="1638712639370" duration="783000" />
-      <workItem from="1638713434312" duration="483000" />
+      <workItem from="1638713434312" duration="1369000" />
+      <workItem from="1638714820062" duration="1845000" />
+      <workItem from="1638716706061" duration="856000" />
     </task>
     <task id="LOCAL-00001" summary=" 注册完成">
       <created>1638027691507</created>
@@ -185,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638082537061</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="尝试合并">
+      <created>1638713975989</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1638713975989</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,7 +164,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value=" 注册完成" />
     <MESSAGE value="登录完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="登录完成" />
+    <MESSAGE value="尝试合并" />
+    <option name="LAST_COMMIT_MESSAGE" value="尝试合并" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
