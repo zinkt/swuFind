@@ -117,11 +117,11 @@
         </dependency>
 
 <!--        手动导入        -->
-        <dependency>
-            <groupId>c3p0</groupId>
-            <artifactId>c3p0</artifactId>
-            <version>0.9.1.2</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>c3p0</groupId>-->
+<!--            <artifactId>c3p0</artifactId>-->
+<!--            <version>0.9.1.2</version>-->
+<!--        </dependency>-->
 
 <!--        <dependency>-->
 <!--            <groupId>commons-beanutils</groupId>-->
@@ -143,15 +143,18 @@
 <!--        </dependency>-->
 
 
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.18</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>mysql</groupId>-->
+<!--            <artifactId>mysql-connector-java</artifactId>-->
+<!--            <version>5.1.18</version>-->
+<!--        </dependency>-->
 
 
     </dependencies>
 
+    <properties>
+        <tomcat.version>8.5.46</tomcat.version>
+    </properties>
 
     <build>
         <!--maven插件-->

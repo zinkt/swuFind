@@ -1,6 +1,5 @@
 package swu606309.swuFind.util;
 
-import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.Part;
@@ -11,8 +10,13 @@ import java.util.UUID;
 public class UploadImageUtils {
     //工具类
     public static String upload(Part part, HttpServletRequest request, HttpServletResponse response,String url){
+//        String photo = part.getSubmittedFileName();//获取文件名
 
-        String photo = part.getSubmittedFileName();//获取文件名
+        String cd = part.getHeader("Content-Disposition");
+//截取不同类型的文件需要自行判断
+        String photo = cd.substring(cd.lastIndexOf("=")+2, cd.length()-1);
+
+
         photo= UUID.randomUUID()+photo;//为防止重名。加uid
         String[] aa = photo.split(".");//判断类型
         if(!(photo.endsWith("jpg")||photo.endsWith("png")||photo.endsWith("jpeg"))){

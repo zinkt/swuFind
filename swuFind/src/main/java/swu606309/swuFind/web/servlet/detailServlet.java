@@ -31,8 +31,8 @@ public class detailServlet extends HttpServlet {
         list_info info=null;
         detailService detailService=new detailServiceImpl();
         info=detailService.findDetail(did);
-        System.out.println("detailServlet is done");
-        System.out.println(info);
+//        System.out.println("detailServlet is done");
+//        System.out.println(info);
         //将查询到的数据序列化为Jason ，并且写回客户端
         ObjectMapper mapper =new ObjectMapper();
         response.setContentType("application/json;charset=utf-8");

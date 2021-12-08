@@ -20,7 +20,7 @@ public class CategoryServlet extends HttpServlet {
         // 1.调用service查询所有
         List<Category> cs = service.findAll();
         //输出调试结果
-        System.out.println(cs);
+//        System.out.println(cs);
         //2.序列化json返回
         response.setContentType("application/json;charset=utf-8");
         ObjectMapper mapper =new ObjectMapper();

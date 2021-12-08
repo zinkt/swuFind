@@ -20,6 +20,7 @@ public class pageQueryServlet extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         //1.获取参数
+//        System.out.println("PageQuery");
         String currentPage=request.getParameter("currentPage");
         String rows = request.getParameter("rows");
         //类别id，eg:港澳游
@@ -45,7 +46,7 @@ public class pageQueryServlet extends HttpServlet {
         }
         //3.将pagebean存入request
         request.setAttribute("pb",pb);
-        System.out.println(pb);
+//        System.out.println(pb);
         //5.将传入的对象序列化为Jason ，并且写回客户端
         ObjectMapper mapper =new ObjectMapper();
         response.setContentType("application/json;charset=utf-8");

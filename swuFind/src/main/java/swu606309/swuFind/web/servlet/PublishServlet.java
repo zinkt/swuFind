@@ -17,7 +17,7 @@ import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Map;
 
-@WebServlet(name = "PublishServlet", value = "/PublishServlet")
+@WebServlet("/PublishServlet")
 @MultipartConfig
 public class PublishServlet extends HttpServlet {
     @Override
@@ -27,10 +27,11 @@ public class PublishServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        System.out.println("PublishServlet is done");
+//        System.out.println("PublishServlet is done");
         //1.设置编码
-        request.setCharacterEncoding("utf-8");
+        request.setCharacterEncoding("UTF-8");
         //2.获取参数
+        String content=request.getParameter("content");
         //2.1获取图片
         Part part = request.getPart("rimage");
         //2.2获取文本内容
@@ -52,7 +53,7 @@ public class PublishServlet extends HttpServlet {
         String rimage = UploadImageUtils.upload(part,request,response,url);
         publish_info.setRimage(rimage);
         //输出表单提交的对象
-        System.out.println(publish_info);
+//        System.out.println(publish_info);
        // 4.调用Service保存
         PublishService service = new PublishServiceImpl();
         service.publish(publish_info);

@@ -26,16 +26,18 @@
     <script>
         //页面加载完成后执行
         $(function () {
-            alert("search")
+
             var search =location.search;
             var cid =search.split("=")[1];
             //页面加载后调用load函数发送ajax请求获取展示内容，传送cid和currentPage，页面刚刚加载完成是currentPage为1
             load(cid,1);
+            // alert("......")
         });
         function load(cid,currentPage)
         {
+            // alert("load");
             //发送ajax请求，四个部分分别为：url，传递参数，接收参数后执行函数，设置服务器响应的数据类型为Json
-            $.get("/findByPageServlet",{cid:cid,currentPage:currentPage},function (pb){
+            $.get("findByPageServlet",{cid:cid,currentPage:currentPage},function (pb){
                 //解析pagebean数据，展示到页面上
                 //1.分页工具条数据展示
                 // 1.1设置总页数和总页码
@@ -101,9 +103,18 @@
                     //存放li
                     lis+=li;
                 }
-                var nextNum=pb.currentPage+1;
-                var nextPage='<li onclick="javascript:load('+cid+','+nextNum+')" class="threeword"><a href="javascript:void(0)">下一页</a></li>';
                 var lastNum=pb.totalPage;
+                var nextNum=pb.currentPage+1;
+                if(nextNum>lastNum)
+                {
+                    nextNum=pb.currentPage;
+                    var nextPage='<li onclick="javascript:load('+cid+','+nextNum+')" class="threeword"><a href="javascript:void(0)">下一页</a></li>';
+                }
+                else
+                {
+                    var nextPage='<li onclick="javascript:load('+cid+','+nextNum+')" class="threeword"><a href="javascript:void(0)">下一页</a></li>';
+                }
+
                 var lastPage='<li onclick="javascript:load('+cid+','+lastNum+')" class="threeword"><a href="javascript:;">末页</a></li>';
                 lis +=nextPage;
                 lis +=lastPage;

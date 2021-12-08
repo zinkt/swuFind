@@ -8,11 +8,17 @@
 <!--登录后修改用户-->
 <script>
       $(function (){
-         alert("header");
-          // $.get("user/findOneUser",{},function (data){
-          //     var msg = "欢迎回来："+data.username;
-          //     $("#span_username").html(msg);
-          // });
+         // alert("header");
+          $.get("user/findOneUser",{},function (data){
+              var msg = "欢迎回来 "+data.username;
+              $("#span_username").html(msg);
+          });
+          // var userspan = data.username;
+          // if(userspan != '')
+          // {
+          //   alert("ready to if");
+          //   $("#log").style.visibility="hidden";
+          // }
         //分类数据
         $.get("category/findAll",{},function (data) {
           /*、
@@ -86,8 +92,8 @@
 			 </ul>
          </div>
 		<!--用户未登录状态-->
-        <div class="d-lg-block d-none login_out"  id="log">
-          <span><a href="login.html" class="btn btn-style btn-secondary">登录</a></span>
+        <div class="d-lg-block d-none login_out">
+          <span><a href="login.html" class="btn btn-style btn-secondary" id="log">登录</a></span>
         </div>
 		
 
