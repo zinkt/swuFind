@@ -22,6 +22,11 @@
 }
 		#detail{height: 20px;}
 		.detail{margin-top: 100px}
+#imgsetting{}
+.imgsetting{width: 350px;height: 400px}
+.imgsetting img{width: auto;height: 100%;}
+#textsetting{}
+.textsetting{width: 400px;height: 450px;}
 </style>
     <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
     <script>
@@ -30,14 +35,14 @@
                 //获取did
                 var search =location.search;
                 var did =search.split("=")[1];
-                alert(did);
+                // alert(did);
                 //发送ajax请求，返回Jason数据
-                $.get("/detailServlet",{did:did},function (info){
+                $.get("detailServlet",{did:did},function (info){
                     //调用数据，填充详情页
                     $("#title").html(info.title);
                     $("#intro").html(info.intro);
                     $("#content").html(info.content);
-                    var src='<img src="'+info.rimage+'" alt="#"/>';
+                    var src='<div class="imgsetting"><img src="'+info.rimage+'" alt="#"/></div>';
                     $("#image").html(src);
                 },"json");
             }
@@ -57,7 +62,7 @@
       <div class="container py-2">
         <h2 class="title">Detail</h2>
         <ul class="breadcrumbs-custom-path mt-2">
-          <li><a href="#url">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span>Detail</li>
         </ul>
       </div>
@@ -70,57 +75,7 @@
   <footer>
     <!-- footer -->
     <section class="w3l-footer">
-      <!--<div class="w3l-footer-16-main py-5">
-        <div class="container">
-          <div class="row">
-           <div class="col-lg-6 column">
-              <div class="row">
-                <div class="col-md-4 column">
-                  <h3>Company</h3>
-                  <ul class="footer-gd-16">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                  </ul>
-                </div>
-                <div class="col-md-4 column mt-md-0 mt-4">
-                  <h3>Useful Links</h3>
-                  <ul class="footer-gd-16">
-                    <li><a href="#url">Destinations</a></li>
-                    <li><a href="#url">Our Branches</a></li>
-                    <li><a href="#url">Latest Media</a></li>
-                    <li><a href="about.html">About Company</a></li>
-                    <li><a href="#url">Our Packages</a></li>
-                  </ul>
-                </div>
-                <div class="col-md-4 column mt-md-0 mt-4">
-                  <h3>Our Services</h3>
-                  <ul class="footer-gd-16">
-                    <li><a href="#url">Privacy Policy</a></li>
-                    <li><a href="#url">Our Terms</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="landing-single.html">Landing Page</a></li>
-                    <li><a href="#url">Our Guides</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>-->
-            <!--<div class="col-lg-6 col-md-12 column pl-lg-5 column4 mt-lg-0 mt-5">
-              <h3>Newsletter </h3>
-              <div class="end-column">
-                <h4>Get latest updates and offers.</h4>
-                <form action="#" class="subscribe" method="post">
-                  <input type="email" name="email" placeholder="Email Address" required="">
-                  <button type="submit">Go</button>
-                </form>
-                <p>Sign up for our latest news & articles. We won’t give you spam mails.</p>
-              </div>
-            </div>
-          </div>-->
-	<!--detail-->
-		      <!-- news -->
+
       <div class="news">
          <div class="container">
             <div class="row">
@@ -134,13 +89,16 @@
             <div class="row d_flex">
                <div class="col-lg-6 col-md-12">
                   <div class="news_img" data-aos="fade-right" data-aos-offset="300"     data-aos-easing="ease-in-sine">
-                     <figure id="image"><img src="images/news1.png" alt="#"/></figure>
+                     <div class="imgsetting"><figure id="image"><img src="images/news1.png" alt="#"/></figure></div>
                      <div class="fer text_align_left">
                      </div>
                   </div>
                </div>
-               <div class="col-lg-6 col-md-12">
+               <div class="textsetting">
                   <div class="recipe" data-aos="fade-left">
+                      <div style="position: relative; z-index:11;" align="left">
+                      <p id="content">content</p>
+                      </div>
                      <ul>
                         <li>
                            <a href="Javascript:void(0)">
@@ -174,9 +132,18 @@
                            </a>
                         </li>
                      </ul>
-                     <p id="content">content</p>
+
+
                   </div>
+                   <br>
+                   <div class="body_count">
+                       <textarea cols="50" rows="6" name="content" id="" placeholder="   请和对方进行亲切友好的交流吧~"></textarea>
+                   </div>
+                   <div class="text-right">
+                       <button class="btn btn-style btn-primary">发表评论</button>
+                   </div>
                </div>
+
             </div>
          </div>
       </div>

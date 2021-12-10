@@ -10,15 +10,17 @@
       $(function (){
          // alert("header");
           $.get("user/findOneUser",{},function (data){
+            // alert()
               var msg = "欢迎回来 "+data.username;
               $("#span_username").html(msg);
+            var userspan = data.username;
+            // if(userspan != '')
+            // {
+            //   alert("ready to if");
+            //   $("#log").style.visibility="hidden";
+            // }
           });
-          // var userspan = data.username;
-          // if(userspan != '')
-          // {
-          //   alert("ready to if");
-          //   $("#log").style.visibility="hidden";
-          // }
+
         //分类数据
         $.get("category/findAll",{},function (data) {
           /*、
@@ -46,7 +48,7 @@
     <div class="container">
       <nav class="navbar navbar-expand-lg stroke">
         <h1><a class="navbar-brand mr-lg-5" href="index.html">
-            swuFind
+            swu<font color="red">Find</font>
           </a></h1>
         <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
           data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
@@ -76,8 +78,7 @@
 		<!--用户登录-->
 		 <!--用户登录状态-->
 		 <div class="login collapse navbar-collapse" id="usr">
-            	
-                <span id="span_username">欢迎回来</span>
+           <span id="span_username">欢迎回来</span>
 			 <ul class="navbar-nav mr-auto">
 		     <li class="nav-item">
               <a href="publish.html" class="nav-link">+发布信息</a>
@@ -104,8 +105,6 @@
               <label class="theme-switch" for="checkbox">
                 <input type="checkbox" id="checkbox">
                 <div class="mode-container">
-                  <i class="gg-sun"></i>
-                  <i class="gg-moon"></i>
                 </div>
               </label>
             </div>

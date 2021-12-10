@@ -2,7 +2,7 @@
 //////定义上传方法函数
 var id="1";
 function PreviewImage(imgFile) { 
-    var pattern = /(\.*.jpg$)|(\.*.png$)|(\.*.jpeg$)|(\.*.gif$)|(\.*.bmp$)/;      
+    var pattern = /(\.*.jpg$)|(\.*.png$)|(\.*.jpeg$)/;
     if(!pattern.test(imgFile.value)) { 
       alert("系统仅支持jpg/jpeg/png/gif/bmp格式的照片！");  
       imgFile.focus(); 

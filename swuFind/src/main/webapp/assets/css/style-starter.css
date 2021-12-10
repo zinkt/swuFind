@@ -15548,8 +15548,7 @@ button.owl-next {
   margin: 16px 0;
   padding: 6px 0;
   display: block;
-  border-top: 1px dotted #c5c5c5;
-  border-bottom: 1px dotted #c5c5c5;
+
   color: var(--primary-color);
 }
 

@@ -19,8 +19,10 @@
 	<style>
 #main{ width:; float:center; padding:10px 0; border-top:1px solid #B6B6B6}
 .ctbox{ margin:0 auto; width:300px; border:1px}
-		#speople{}
-		.speople{margin: 50px}
+#speople{}
+.speople{margin: 50px}
+.publishimg{height: 170px; width: 300px;}
+.publishimg img{width: 100%;height: 100%;}
 </style>
     <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
     <script>
@@ -30,6 +32,21 @@
             var search =location.search;
             var cid =search.split("=")[1];
             //页面加载后调用load函数发送ajax请求获取展示内容，传送cid和currentPage，页面刚刚加载完成是currentPage为1
+            if(cid==2)
+            {
+                $("#h_title").html("Look for People");
+                $("#_title").html("<span class=\"fa fa-arrow-right mx-2\" aria-hidden=\"true\"></span>Look for People");
+            }
+            else if (cid==3)
+            {
+                $("#h_title").html("Look for Thing");
+                $("#_title").html("<span class=\"fa fa-arrow-right mx-2\" aria-hidden=\"true\"></span>Look for Thing");
+            }
+            else
+            {
+                $("#h_title").html("Other");
+                $("#_title").html("<span class=\"fa fa-arrow-right mx-2\" aria-hidden=\"true\"></span>Other");
+            }
             load(cid,1);
             // alert("......")
         });
@@ -128,7 +145,7 @@
                     var did=info.did;
 //var li='<li class="nav-item"><a class="nav-link" href="searchpeople.html?cid='+data[i].cid+'">'+data[i].cname+'</a></li>';
                     var li='<li>\n' +
-                        '                            <div class="img"><img src="'+info.rimage+'" alt="" style="height: 169px; weight: 299px"></div>\n' +
+                        '                            <div class="img publishimg"><img src="'+info.rimage+'" alt="" style="height: 169px; weight: 299px"></div>\n' +
                         '                            <div class="text1">\n' +
                         '                                <p>'+info.title+'</p>\n' +
                         '                                <br/>\n' +
@@ -156,10 +173,10 @@
   <section class="w3l-about-breadcrumb text-left">
     <div class="breadcrumb-bg breadcrumb-bg-about py-sm-5 py-4">
       <div class="container">
-        <h2 class="title">Look for people</h2>
+        <h2 class="title" id="h_title">Look for people</h2>
         <ul class="breadcrumbs-custom-path mt-2">
-          <li><a href="#url">Home</a></li>
-          <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span>Look for people</li>
+          <li><a href="index.html">Home</a></li>
+          <li class="active" id="_title"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span>Look for people</li>
         </ul>
       </div>
     </div>
@@ -172,7 +189,7 @@
                 <div class="left">
                     <ul id="info">
                         <li>
-                            <div class="img"><img src="images/04-search_03.jpg" alt=""></div>
+                            <div class="publishimg"><img src="images/04-search_03.jpg" alt=""></div>
                             <div class="text1">
                                 <p>主要信息</p>
                                 <br/>
@@ -298,36 +315,36 @@
                     </div>
                     <ul>
                         <li>
-                            <div class="left"><img src="images/04-search_09.jpg" alt=""></div>
+                            <div class="left"><img src="images/searchimg.jpg" alt=""></div>
                             <div class="right">
-								<p>清远新银盏温泉度假村酒店/自由行套...</p>
+								<p>西师街三室一厅房屋出租，家具家电齐全，拎包即住；屋内光线好，视野开阔；大阳台，南北通透，极好采光；安静，非常适合学习和生活。</p>
                             </div>
                         </li>
                         <li>
-                            <div class="left"><img src="images/04-search_09.jpg" alt=""></div>
+                            <div class="left"><img src="images/searchimg.jpg" alt=""></div>
                             <div class="right">
-                                <p>清远新银盏温泉度假村酒店/自由行套...</p>
+                                <p>西师街三室一厅房屋出租，家具家电齐全，拎包即住；屋内光线好，视野开阔；大阳台，南北通透，极好采光；安静，非常适合学习和生活。</p>
                                 
                             </div>
                         </li>
                         <li>
-                            <div class="left"><img src="images/04-search_09.jpg" alt=""></div>
+                            <div class="left"><img src="images/searchimg.jpg" alt=""></div>
                             <div class="right">
-                                <p>清远新银盏温泉度假村酒店/自由行套...</p>
+                                <p>西师街三室一厅房屋出租，家具家电齐全，拎包即住；屋内光线好，视野开阔；大阳台，南北通透，极好采光；安静，非常适合学习和生活。</p>
                                 
                             </div>
                         </li>
                         <li>
-                            <div class="left"><img src="images/04-search_09.jpg" alt=""></div>
+                            <div class="left"><img src="images/searchimg.jpg" alt=""></div>
                             <div class="right">
-                                <p>清远新银盏温泉度假村酒店/自由行套...</p>
+                                <p>西师街三室一厅房屋出租，家具家电齐全，拎包即住；屋内光线好，视野开阔；大阳台，南北通透，极好采光；安静，非常适合学习和生活。</p>
                                 
                             </div>
                         </li>
                         <li>
-                            <div class="left"><img src="images/04-search_09.jpg" alt=""></div>
+                            <div class="left"><img src="images/searchimg.jpg" alt=""></div>
                             <div class="right">
-                                <p>清远新银盏温泉度假村酒店/自由行套...</p>
+                                <p>西师街三室一厅房屋出租，家具家电齐全，拎包即住；屋内光线好，视野开阔；大阳台，南北通透，极好采光；安静，非常适合学习和生活。</p>
                                 
                             </div>
                         </li>

@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
-@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900&display=swap');
+
 
 /*****---------------------------------------- 1) font-family: 'Rajdhani', sans-serif;
  2) font-family: 'Poppins', sans-serif;
@@ -9,11 +6,6 @@
 
 
 /*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
-
-@import url(animate.min.css);
-@import url(normalize.css);
-@import url(icomoon.css);
-@import url(font-awesome.min.css);
 
 /*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
 
@@ -30,14 +22,6 @@ html {
      overflow-x: hidden;
 }
 
-body {
-     color: #666666;
-     font-size: 14px;
-     font-family: 'Raleway', sans-serif;
-     line-height: 1.80857;
-     font-weight: normal;
-     overflow-x: hidden;
-}
 
 a {
      color: #1f1f1f;
@@ -67,27 +51,26 @@ h6 {
 }
 
 h1 {
-     font-size: 24px;
+
 }
 
 h2 {
-     font-size: 22px;
+
 }
 
 h3 {
-     font-size: 18px;
+
 }
 
 h4 {
-     font-size: 16px
+
 }
 
 h5 {
-     font-size: 14px
+
 }
 
 h6 {
-     font-size: 13px
 }
 
 *,
@@ -124,7 +107,7 @@ ol {
 p {
      margin: 0px;
      font-weight: 500;
-     font-size: 17px;
+
      line-height: 30px;
      color: #454546;
 }
@@ -292,116 +275,7 @@ button {
 }
 
 
-/*-- header --*/
 
-.head_top {
-     background-color: #ff0000;
-}
-
-ul.top_infomation {
-     display: flex;
-     justify-content: space-between;
-     flex-wrap: wrap;
-     align-items: center;
-     height: 40px;
-}
-
-ul.top_infomation li {
-     display: inline-block;
-     font-family: 'Poppins', sans-serif;
-     font-size: 15px;
-     color: #fff;
-}
-
-ul.top_infomation li img {
-     padding-right: 5px;
-}
-
-ul.top_infomation li a {
-     color: #fff;
-}
-
-ul.top_infomation li a:hover {
-     color: #fff;
-}
-
-.header_midil {
-     width: 100%;
-     background: #fff;
-     height: 80px;
-     padding: 23px 30px;
-}
-
-
-.navigation.navbar {
-     padding: 0;
-     text-align: center;
-}
-
-.navigation.navbar-expand-md .navbar-collapse {
-     justify-content: center;
-}
-
-.navigation .navbar-nav.mr-auto {
-     margin: 0 auto;
-}
-
-.navigation .navbar-nav.mr-auto li {
-     display: flex;
-     align-items: center;
-}
-
-.navigation.navbar-dark .navbar-nav .nav-link {
-     padding: 0px 35px;
-     color: #454546;
-     font-size: 17px;
-     line-height: 20px;
-     font-weight: 500;
-     border-radius: 30px;
-     text-transform: uppercase;
-}
-
-.navigation.navbar-dark .navbar-nav .nav-link:focus,
-.navigation.navbar-dark .navbar-nav .nav-link:hover {
-     color: #e93225;
-}
-
-.navigation.navbar-dark .navbar-nav .active>.nav-link,
-.navigation.navbar-dark .navbar-nav .nav-link.active,
-.navigation.navbar-dark .navbar-nav .nav-link.show,
-.navigation.navbar-dark .navbar-nav .show>.nav-link {
-     color: #e93225;
-}
-
-.di_no {
-     display: none;
-}
-
-ul.email {
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-}
-
-ul.email li {
-     display: inline-block;
-}
-
-ul.email li a {
-     color: #f62323;
-     font-size: 17px;
-     text-transform: uppercase;
-}
-
-ul.email li i {
-     color: #f62323;
-     font-size: 19px;
-     ;
-     padding-left: 10px;
-}
-
-
-/** end header **/
 
 
 /** banner section **/

@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Contact</title>
+  <title>Publish </title>
   <!-- google fonts -->
   <link href="http://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link href="http://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap"
@@ -26,10 +26,10 @@
   <section class="w3l-about-breadcrumb text-left">
     <div class="breadcrumb-bg breadcrumb-bg-about py-sm-5 py-4">
       <div class="container py-2">
-        <h2 class="title">Contact us</h2>
+        <h2 class="title">Publish</h2>
         <ul class="breadcrumbs-custom-path mt-2">
-          <li><a href="#url">Home</a></li>
-          <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span>Contact us</li>
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span>Publish</li>
         </ul>
       </div>
     </div>
@@ -39,7 +39,6 @@
 <section class="w3l-contact" id="contact">
   <div class="contact-infubd py-5">
     <div class="container py-lg-3">
-		<h2>+发布信息</h2>
       <div class="contact-grids row">
 		  
       <!--<div class="col-lg-6 mt-lg-0 mt-5 contact-right">
@@ -66,29 +65,30 @@
           <div class="partners">
             <div class="cont-details">
               <h5>小贴士（TIPS）</h5>
-              <p class="mt-3 mb-4">Hi there, We are available 24/7 by fax, e-mail or by phone. Drop us line so we can talk
-                futher about that.</p>
             </div>
-            <div class="hours">
-              <h6 class="mt-4">Email:</h6>
-              <p> <a href="mailto:mail@swuFind.com">
-                mail@swuFind.com</a></p>
-              <h6 class="mt-4">Visit Us:</h6>
-              <p> Dormitory 309,No.6 Dormitory,Orange Garden,Southwest University.</p>
-              <h6 class="mt-4">Contact:</h6>
-              <p class="margin-top"><a href="tel:+44-255-366-88">+0431-176-3463-3577</a></p>
+            <div class="hours" style="text-align: left">
+              <h6 class="mt-4">1.合适的标题能够帮你更快Find哦，但是，拒绝标题党！</h6>
+              <h6 class="mt-4">2.简介就像贴吧水经验那样，几个字就够了</h6>
+              <h6 class="mt-4">3.详情当然是详情啊</h6>
+              <h6 class="mt-4">4.类别很重要，to be people or not to be, that's the question!</h6>
+              <h6 class="mt-4">5.图片要求jpg/jpeg/png格式</h6>
+              <h6 class="mt-4">6.实在不会去看看其他人的格式吧</h6>
+              <br>
+              <img  style="height: 300px;width: 300px" src="images/publishimg.jpg">
             </div>
           </div>
-        </div>
+          </div>
 		 <div class="col-lg-6 mt-lg-0 mt-5 contact-right">
 <!--           将内容提交到/PublishServlet中-->
-           <form accept-charset="UTF-8" action="/PublishServlet" class="publish" id="new_topic" method="post" enctype="multipart/form-data">
+           <form accept-charset="UTF-8" action="/swuFind/PublishServlet" class="publish" id="new_topic" method="post" enctype="multipart/form-data">
   <table width="100%" border="0" cellspacing="0" cellpadding="6">
     <colgroup><col width="140"><col></colgroup>
     <tbody>
-
+    <div class="cont-details">
+      <h5>发布信息</h5>
+    </div>
 <tr>
-  <th>文章标题</th>
+  <th>信息标题</th>
   <td>
     <label>
       <input  required id="topic_title" maxlength="10" name="title" size="60" type="text">
@@ -96,7 +96,7 @@
   </td>
 </tr>
 <tr>
-  <th valign="top">文章简介</th>
+  <th valign="top">信息简介</th>
   <td>
     <label>
       <textarea cols="62" rows="14" name="intro"></textarea>
@@ -105,7 +105,7 @@
 </tr>
 
 <tr>
-  <th valign="top">文章内容</th>
+  <th valign="top">信息详情</th>
   <td>
     
     <div class="body_count">
@@ -114,14 +114,16 @@
   </td>
 </tr>
 <tr>
-  <th valign="top">文章类别</th>
+  <th valign="top">信息类别</th>
   <td>
-    <div class="col-lg-6 contact-left">
-      <select name="cid">
+    <div class="row booking-form book-form">
+      <div class="form-input col-md-4 mt-md-0 mt-3">
+      <select name="cid" style="border-color: #DDDDDD">
         <option value="2">寻人</option>
         <option value="3">寻物</option>
         <option value="4">其他</option>
       </select>
+    </div>
     </div>
   </td>
 </tr>
