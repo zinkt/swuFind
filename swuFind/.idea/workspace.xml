@@ -1,57 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="swufind:war2" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="458c412b-af3a-43ee-9893-94efbed5d2ce" name="Changes" comment="UploadImageUtils">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_11_24_23_15__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_11_24_23_15__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_11_27_9_43__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_11_27_9_43__Changes_.xml" afterDir="false" />
+    <list default="true" id="458c412b-af3a-43ee-9893-94efbed5d2ce" name="Changes" comment="合并基本完成">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/swufind_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/swufind_war.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/swufind_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/swufind_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/swufind_war_exploded2.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/druid.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/druid.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/common.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/style-starter.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/style-starter.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/images/banner1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/images/banner3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/images/banner4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/banner4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/detail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/forgetpasswd.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/forgetpasswd.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/uploadjpg.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/uploadjpg.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/publish.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/publish.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/publish_ok.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/publish_ok.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/register_ok.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register_ok.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/searchpeople.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/swu606309/swuFind/dao/impl/pageQueryDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/swu606309/swuFind/dao/impl/pageQueryDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/swu606309/swuFind/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/swu606309/swuFind/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/swu606309/swuFind/web/servlet/pageQueryServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/swu606309/swuFind/web/servlet/pageQueryServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/tab_user.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/druid.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/druid.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/swu606309/swuFind/web/servlet/CategoryServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/swu606309/swuFind/web/servlet/CategoryServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/conf/logging.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/conf/tomcat-users.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/conf/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2021-11-13" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2021-11-15" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2021-11-18" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2021-11-22" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2021-11-24" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2021-11-25" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2021-11-27" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="HTML File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/main/java/swu606309/swuFind/web/servlet/UserServlet.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/swu606309/swuFind/web/servlet/BaseServlet.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/webapp/register.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/swu606309/swuFind/web/servlet/BaseServlet.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedIndex" value="1" />
@@ -63,33 +64,32 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/swu606309/swuFind/util" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Facets" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\swuFind\swuFind\swuFind\swuFind\src\main\webapp\images" />
-      <recent name="D:\swuFind\swuFind\swuFind\swuFind\src\main\webapp" />
-      <recent name="D:\swuFind\swuFind\swuFind\swuFind\src\main\webapp\WEB-INF" />
-      <recent name="D:\swuFind\swuFind\swuFind\swuFind\src\main\webapp\assets\images" />
       <recent name="D:\github_re\swuFind\swuFind\src\main\java\swu606309\swuFind\util" />
+      <recent name="D:\github_re\swuFind\swuFind\src\main\java\swu606309\swuFind\web\servlet" />
+      <recent name="D:\github_re\swuFind\swuFind\src\main\webapp" />
+      <recent name="D:\github_re\swuFind\swuFind\src\main\java\swu606309\swuFind\service" />
+      <recent name="D:\github_re\swuFind\swuFind\src\main\java\swu606309\swuFind\service\impl" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="swuFind [tomcat7:run]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+    <configuration name="swuFind [tomcat7:run]" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
         <option name="myRunnerSettings" />
@@ -143,15 +143,11 @@
       <workItem from="1638716706061" duration="856000" />
       <workItem from="1638717606408" duration="274000" />
       <workItem from="1638803098600" duration="1607000" />
-      <workItem from="1638937713517" duration="9174000" />
-      <workItem from="1638968828954" duration="346000" />
-      <workItem from="1638969297062" duration="299000" />
-      <workItem from="1638972146749" duration="872000" />
-      <workItem from="1638973144415" duration="6959000" />
-      <workItem from="1639025488107" duration="1677000" />
-      <workItem from="1639058795165" duration="2565000" />
-      <workItem from="1639105303766" duration="3568000" />
-      <workItem from="1639118819666" duration="8754000" />
+      <workItem from="1638937713517" duration="11389000" />
+      <workItem from="1638978166858" duration="2458000" />
+      <workItem from="1639049372598" duration="342000" />
+      <workItem from="1639120838279" duration="723000" />
+      <workItem from="1639126318886" duration="1194000" />
     </task>
     <task id="LOCAL-00001" summary=" 注册完成">
       <created>1638027691507</created>
@@ -195,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638804745821</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="合并基本完成">
+      <created>1638950015793</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1638950015793</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,7 +222,8 @@
     <MESSAGE value="尝试合并" />
     <MESSAGE value="大致合并完成" />
     <MESSAGE value="UploadImageUtils" />
-    <option name="LAST_COMMIT_MESSAGE" value="UploadImageUtils" />
+    <MESSAGE value="合并基本完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="合并基本完成" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

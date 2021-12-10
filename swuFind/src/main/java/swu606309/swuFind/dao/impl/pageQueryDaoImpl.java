@@ -17,7 +17,7 @@ public class pageQueryDaoImpl implements pageQueryDao {
     @Override
     public int findTotalCount(int cid) {
         String sql="select count(*) from tab_detail where cid =?";
-        System.out.println("cid is:"+cid);
+//        System.out.println("cid is:"+cid);
         return template.queryForObject(sql,Integer.class,cid);
     }
     //查找每页需要展示的数据

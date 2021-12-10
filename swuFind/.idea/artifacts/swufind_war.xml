@@ -9,7 +9,7 @@
         <unpackNestedArchives>false</unpackNestedArchives>
       </options>
     </properties>
-    <root id="archive" name="swuFind-1.0.war">
+    <root id="archive" name="swuFind.war">
       <element id="artifact" artifact-name="swufind:war exploded" />
     </root>
   </artifact>
