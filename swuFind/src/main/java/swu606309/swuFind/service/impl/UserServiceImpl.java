@@ -27,7 +27,7 @@ public class UserServiceImpl implements UserService {
         userDao.save(user);
 
         //3发送邮件
-        String content = "<a href='http://localhost/swuFind/user/active?code="+user.getCode()+"'>点击激活【swuFind】</a>";
+        String content = "<a href='http://localhost/swuFind/user/active?code="+user.getCode()+"'>点击激活[swuFind]喔!</a>";
         MailUtils.sendMail(user.getEmail(),content,"swuFind激活邮件");
 
         return true;

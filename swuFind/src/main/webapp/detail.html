@@ -30,7 +30,6 @@
                 //获取did
                 var search =location.search;
                 var did =search.split("=")[1];
-                alert(did);
                 //发送ajax请求，返回Jason数据
                 $.get("/detailServlet",{did:did},function (info){
                     //调用数据，填充详情页

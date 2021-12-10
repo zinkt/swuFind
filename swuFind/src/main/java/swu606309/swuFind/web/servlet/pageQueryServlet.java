@@ -42,7 +42,7 @@ public class pageQueryServlet extends HttpServlet {
             pb = service.findUserByPage(cid,currentPage,rows);
         } catch (Exception e) {
             e.printStackTrace();
-            System.out.println("Can't get the pb Object");
+//            System.out.println("Can't get the pb Object");
         }
         //3.将pagebean存入request
         request.setAttribute("pb",pb);
