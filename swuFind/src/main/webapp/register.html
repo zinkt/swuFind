@@ -16,6 +16,8 @@
   <!-- Template CSS -->
 	<style>
 #register{margin: auto;margin-left: 40%;}
+#main{ width:; float:center; padding:10px 0; border-top:1px solid #B6B6B6}
+.ctbox{ margin:0 auto; width:300px; border:1px}
 
 </style>
     <script src="js/jquery-3.3.1.js"></script>
@@ -110,7 +112,7 @@
 <section class="w3l-contact" id="contact">
 
       <div class="contact-grids" id="register">
-        <div class="col-lg-6 mt-lg-0 mt-5 contact-centers">
+        <div class="col-lg-5 mt-lg-0 mt-5 contact-centers">
             <div id="errorMsg" style="color: red" ></div><!-- error msg -->
           <form id="registerForm" action="user" method="post" class="signin-form">
               <input type="hidden" name="action" value="register">
@@ -144,13 +146,15 @@
                         </script>
                     </td>
                 </tr>
-				 <div class="text-left+">
-					<a style="float: left" href="login.html">已有账号？立即登录</a>
+				 <div class="text">
+					<a style="position: center" href="login.html">已有账号？立即登录</a>
 				  </div>
             </div>
+              <br>
             <div class="text">
               <button type="submit" class="btn btn-style btn-primary">注册</button>
             </div>
+              <div style="height: 40px"></div>
           </form>
         </div>
 

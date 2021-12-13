@@ -9,22 +9,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="458c412b-af3a-43ee-9893-94efbed5d2ce" name="Changes" comment="合并基本完成">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/swufind_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/swufind_war.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/swufind_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/swufind_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/swufind_war_exploded2.xml" beforeDir="false" />
+    <list default="true" id="458c412b-af3a-43ee-9893-94efbed5d2ce" name="Changes" comment="前后端基本完成">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/swu606309/swuFind/dao/impl/pageQueryDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/swu606309/swuFind/dao/impl/pageQueryDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/swu606309/swuFind/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/swu606309/swuFind/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/swu606309/swuFind/web/servlet/pageQueryServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/swu606309/swuFind/web/servlet/pageQueryServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tab_user.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/images/c1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/images/c2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/images/c3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/images/c4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/contact.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/uploadjpg.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/uploadjpg.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/publish.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/publish.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/z01.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/z01.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/z02.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/z02.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/z03.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/z03.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/z04.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/z04.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/z05.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/z05.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/z06.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/z06.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/z07.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/z07.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/z08.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/z08.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/druid.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/druid.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/swu606309/swuFind/web/servlet/CategoryServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/swu606309/swuFind/web/servlet/CategoryServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/conf/logging.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/conf/tomcat-users.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/conf/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/swu606309/swuFind/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/swu606309/swuFind/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tab_user.sql" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2021-11-13" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2021-11-15" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2021-11-18" beforeDir="false" />
@@ -51,8 +60,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/main/java/swu606309/swuFind/web/servlet/UserServlet.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/webapp/register.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/swu606309/swuFind/web/servlet/BaseServlet.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/webapp/register.html" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedIndex" value="1" />
@@ -68,7 +77,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/swu606309/swuFind/util" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/assets/images" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -81,11 +90,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\swuFind\swuFind\swuFind\swuFind\src\main\webapp\assets\images" />
       <recent name="D:\github_re\swuFind\swuFind\src\main\java\swu606309\swuFind\util" />
       <recent name="D:\github_re\swuFind\swuFind\src\main\java\swu606309\swuFind\web\servlet" />
       <recent name="D:\github_re\swuFind\swuFind\src\main\webapp" />
       <recent name="D:\github_re\swuFind\swuFind\src\main\java\swu606309\swuFind\service" />
-      <recent name="D:\github_re\swuFind\swuFind\src\main\java\swu606309\swuFind\service\impl" />
     </key>
   </component>
   <component name="RunManager">
@@ -148,6 +157,12 @@
       <workItem from="1639049372598" duration="342000" />
       <workItem from="1639120838279" duration="723000" />
       <workItem from="1639126318886" duration="1194000" />
+      <workItem from="1639147347085" duration="1789000" />
+      <workItem from="1639214941179" duration="681000" />
+      <workItem from="1639235139521" duration="239000" />
+      <workItem from="1639235590985" duration="287000" />
+      <workItem from="1639318993385" duration="6982000" />
+      <workItem from="1639367065131" duration="987000" />
     </task>
     <task id="LOCAL-00001" summary=" 注册完成">
       <created>1638027691507</created>

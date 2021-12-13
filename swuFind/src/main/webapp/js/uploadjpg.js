@@ -4,7 +4,7 @@ var id="1";
 function PreviewImage(imgFile) { 
     var pattern = /(\.*.jpg$)|(\.*.png$)|(\.*.jpeg$)/;
     if(!pattern.test(imgFile.value)) { 
-      alert("系统仅支持jpg/jpeg/png/gif/bmp格式的照片！");  
+      alert("系统仅支持jpg/jpeg/png格式的照片！");
       imgFile.focus(); 
     }else{
        //定义图片路径 
